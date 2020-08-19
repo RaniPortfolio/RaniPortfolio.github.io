@@ -1,0 +1,363 @@
+body{
+	font-family: "Times New Roman", Times, serif;
+	margin: 0px;
+	padding: 0px;
+	font-size: 17px;
+
+}
+header{
+	/*position: fixed;*/
+    /*border: 1px solid gray;*/
+   width: 100%;
+   box-shadow: 2px 0px 5px gray;
+   /*position: fixed;*/
+   background-color: black;
+   z-index: 1;
+}
+
+/*header #navbar{
+  background-color: #333;
+  position: fixed;
+  top: -80px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 1;
+}*/
+
+header .logo{
+	color:white !important;
+	font-size: 2em;
+}
+header ul{
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	float: right;
+}
+header ul li{
+	font-size: 20px;
+	display: inline;
+	font-weight: bold;
+	padding: 10px;
+}
+
+header ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+header ul li a:hover{
+	text-decoration: none;
+	color: #ffc451;
+}
+
+header ul li.active a{
+	color: #ffc451;
+}
+.navbar-light .navbar-toggler{
+	background-color: #fff !important;
+}
+.btn-outline-warning{
+	color: #fff;
+	padding: 5px 20px;
+}
+@media only screen and (max-width: 768px) {
+  header ul{
+    float: left;
+  }
+}
+
+/*HOME CSS*/
+#home{
+	background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.6)), url(../img/portfolio/portfolio-2.jpg) center top no-repeat fixed;
+	background-size: cover;
+    background-color: #f7f7f7 !important;
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #fff;
+}
+#home .head-title{
+	padding: 5%;
+}
+#home .head-title h1{
+	font-size: 3.5em;
+}
+#home .head-title p{
+	font-size: 1.4em;
+	color: rgba(255, 255, 255, 0.9);
+}
+#home .head-icon{
+	padding: 15% 0%;
+	border: 1px solid gray;
+}
+#home .head-icon i{
+	font-size: 30px;
+	color: #ffc451;
+}
+#home .head-icon p{
+	font-size: 1.3em;
+	padding-top: 5px;
+}
+#home .home-sec{
+	padding-bottom: 15%;
+}
+@media only screen and (max-width: 768px) {
+  #home .head-icon{
+    margin-top: 22px;
+  }
+  #home .head-title h1{
+  	font-size: 2em;
+  }
+}
+
+/*ABOUT US CSS*/
+#about{
+	padding: 5%;
+}
+#about .about-icons i{
+	font-size:24px;
+	color:#ffc451; 
+}
+#about .about-imag img{
+	width: 100%;
+	height: 465px;
+}
+
+/*ABOUT US THIRD SECTION*/
+.about-third{
+	padding-top: 5%;
+}
+.secound-about-icons i{
+	font-size: 50px;
+	color:#ffc451;
+}
+.secound-about-icons span{
+	font-size: 23px;
+	padding-left: 10px;
+	color: #000;
+	font-weight: 100px;
+}
+.secound-about-icons p{
+	color: #848484;
+	padding-left: 60px;
+}
+
+
+/*SERVICES SECTION*/
+#service{
+	padding: 5%;	
+}
+#service .card{
+	padding: 15% 0;
+	text-align: center;
+	margin-top: 20px; 
+}
+#service .card:hover{
+	box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+#service .card .card-body i{
+	font-size: 40px;
+	color:#ffc451;
+	border: 1px solid #ffc451;
+	padding: 15px;
+	border-radius: 10px;  
+}
+#service .card .card-body i:hover{
+	color:#fff;
+	background-color:#ffc451;
+}
+#service .card .card-body h3{
+	padding-top: 5%;
+}
+
+
+/*CALL TO ACTION SECTION*/
+#call-to-action{
+	background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.6)), url(../img/portfolio/portfolio-2.jpg) center top no-repeat fixed;
+	background-size: cover;
+    background-color: #f7f7f7 !important;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+    padding: 5%;
+}
+#call-to-action h2{
+	font-size: 2.5em;
+	font-weight: 700;
+}
+#call-to-action p{
+	font-size: 1.1em;
+}
+#call-to-action .call-to-action-butt{
+	color: #fff;
+    padding: 10px 50px;
+    font-size: 1.2em;
+    border: 1px solid #fff;
+}
+@media only screen and (max-width: 768px) {
+  #call-to-action{
+  	height: auto;
+  }
+}
+
+
+
+/*team SECTION*/
+#team{
+	padding: 5%;
+}
+#team .card{
+	box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.1);
+	position: relative;	
+}
+#team .card .card-body{
+	padding: 4px 12px;
+}
+#team .port-icons i{
+	font-size: 20px;
+	color:#ffc451;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 8px;
+	margin: 3px;
+	opacity:0;
+	transition: .5s ease;
+	text-align: center;  
+}
+#team .port-icons{
+	position: absolute;
+	bottom: 35%;
+    left: 35px;
+    opacity:0;
+    transition: .5s ease;
+}
+#team .card:hover .port-icons i{
+	opacity: 1;
+}
+#team .card:hover .port-icons{
+	opacity: 1;
+}
+@media only screen and (max-width: 768px) {
+  #team .port-icons{
+  	left: 10%;
+  }
+}
+
+#carousel{
+	padding: 5%;
+	background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.6)), url(../img/portfolio/portfolio-2.jpg) center top no-repeat fixed;
+	background-size: cover;
+    background-color: #f7f7f7 !important;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+}
+#carousel .slide-imag{
+	border-radius: 50px;
+	border: 8px solid #392d32;
+}
+#carousel .carousel-item p{
+	color: #eee;
+	padding-top: 10px;
+	font-size: 1.1em;
+}
+@media only screen and (max-width: 768px) {
+  #carousel{
+  	height: auto;
+  }
+}
+
+/*CONTACT US SECTION*/
+#contact{
+	padding: 5%;
+}
+#contact .cont-icon{
+	padding: 5%;
+}
+#contact .cont-icon i{
+	font-size: 25px;
+	border-radius: 10px;
+	background-color: #ffc451;
+	padding: 8px;
+}
+#contact .cont-icon span{
+	font-size: 25px;
+}
+#contact .cont-icon p{
+	margin-left: 25%;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ffc451;
+  color: white;
+  padding: 10px 60px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  border: 1px solid #ffc451;
+  background-color: #fff;
+  color:#ffc451 
+}
+form{
+	/* box-shadow: 2px 0px 5px gray;*/
+	 padding: 20px;
+	 text-align: center;
+}
+/*FOOTER SECTION*/
+#footer{
+	padding-top: 5%;
+	background-color: #000000e2;
+	color: #fff;
+}
+#footer ul li{
+	padding: 5px;
+}
+#footer ul li a{
+	color: #fff;
+}
+#footer p{
+	padding: 5px;
+}
+#footer .foot-icon i{
+	/*padding: 13px;*/
+	border: 1px solid #fff;
+	border-radius: 10px; 
+}
+#footer .fa-twitter{
+	padding: 10px;
+}
+#footer .fa-facebook{
+	padding: 10px 13px;
+}
+#footer .fa-google-plus{
+	padding: 10px 7px;
+}
+#footer .fa-linkedin{
+	padding: 10px 10px;
+}
+#footer .foot-icon{
+	padding: 10px;
+}
+#footer .foot{
+	background-color: #000;
+	text-align: center;
+	padding: 10px;
+}
