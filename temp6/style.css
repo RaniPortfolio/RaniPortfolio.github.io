@@ -54,7 +54,9 @@ header ul li.active a{
 	font-size: 3em;
 	padding-bottom: 15px;
 }
-
+#home p{
+	color: #cccccc;
+}
 #home .btn{
 	color: #fff;
     padding: 10px 50px;
