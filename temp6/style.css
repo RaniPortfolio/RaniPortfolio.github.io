@@ -328,7 +328,7 @@ header ul li.active a{
 /**********************Carousel SECTION CSS****************************/ 
 #carousel{
 	padding: 5%;
-	background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.6)), url(img/photo-11.jpg) center top no-repeat fixed;
+	background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.6)), url(img/photo-16.jpg) center top no-repeat fixed;
 	background-size: cover;
     background-color: #f7f7f7 !important;
     position: relative;
