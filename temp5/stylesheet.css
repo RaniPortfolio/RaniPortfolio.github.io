@@ -129,13 +129,25 @@ p{
 	padding-top: 10px;
 }
 
-.textbox-1, .textbox-2, .textbox-3, .textbox-4, .textbox-5, .textbox-6{
+.textbox-1, .textbox-2, .textbox-3{
 	color: #fff;
 	border: 1px solid #fff;
 	padding: 20px;
 	border-radius: 10px;
 	margin: 10px;
+  	-webkit-transition: .3s ease;
+  	transition: .3s ease;
 }
+.textbox-1:hover, .textbox-2:hover, .textbox-3:hover{
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.textbox-1:hover i, .textbox-2:hover i, .textbox-3:hover i{
+	 transform: rotate(90deg);
+}
+
 .textbox-1 i{
 	font-size: 30px;
 	color: #fff !important;
@@ -148,18 +160,7 @@ p{
 	font-size: 30px;
 	color: #fff !important;
 }
-.textbox-4 i{
-	font-size: 30px;
-	color: #fff !important;
-}
-.textbox-5 i{
-	font-size: 30px;
-	color: #fff !important;
-}
-.textbox-6 i{
-	font-size: 30px;
-	color: #fff !important;
-}
+
 
 /**********************OUR SKILLS SECTION CSS****************************/
 #our-skills{
@@ -185,9 +186,11 @@ p{
 }
 #team p{
 	padding-bottom: 5px;
+	color: #bfbfbf;
+}
+#team .team-text{
 	color: #666666;
 }
-
 #team .overlay{
   position: absolute; 
   background: rgb(0, 0, 0);
@@ -196,7 +199,7 @@ p{
   width: 100%;
   transition: .5s ease;
   opacity:0;
-  color: white;
+  color: #fff;
   font-size: 20px;
   top: 0%;
   height: 250px;
