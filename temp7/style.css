@@ -177,9 +177,74 @@ p{
 		padding: 10% 0px;
 	}
 }
+
+/**********************SERVICE SECTION CSS****************************/
+#service{
+	padding: 5% 0px;
+	background-color: #2c2c2c;
+}
+#service h1{
+	text-align: center;
+	color: #fff;
+}
+#service .para {
+	text-align: center;
+	color: #fff;
+	padding-bottom: 15px;
+}
+.service-section1, .service-section2, .service-section3{
+	position: relative;
+	margin: 10px;
+}
+.service-section1:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	opacity: .7;
+	background-image: linear-gradient(to bottom right, #2193b0,#6dd5ed);	
+}
+.service-section2:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	opacity: .7;
+	background-image: linear-gradient(to bottom right, #e7b148,#f9d648);	
+}
+.service-section3:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	opacity: .7;
+	background-image: linear-gradient(to bottom right, #f86dc3,#fcb6e1);	
+}
+.section-info{
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	color: #fff;
+}
+.section-info i{
+	font-size:25px;
+	border:1px solid #fff;
+	padding: 5px; 
+}
+.section-info h5{
+	font-weight: bold;
+	padding: 10px 0px;
+}
+
  /**********************GALLARY SECTION CSS*************************** */
  #gallary{
-	background-color: #2c2c2c;
+	background-color: #313131;
 	
 }
 .gallary-section{
@@ -244,10 +309,11 @@ p{
 	}
 }
 
+
 /**********************TEAM SECTION CSS****************************/
 #team{
 	padding: 5% 0px;
-	background-color: #313131;
+	background-color: #2c2c2c;
 }
 #team h1{
 	text-align: center;
@@ -281,7 +347,7 @@ p{
 /**********************CONTACT US SECTION CSS****************************/
 #contact{
 	padding: 5% 0px;
-	background-color: #2c2c2c;
+	background-color: #313131;
 	text-align: center;
 }
 #contact h1{
