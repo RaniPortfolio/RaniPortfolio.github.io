@@ -10,40 +10,36 @@ h1{
 	color: #fff; 
 	font-size: 3em;
 }
+
 p{
 	font-size: 18px;
 }
 .navbar{
-	 background-color: #000 !important;
-}
+	 width: 100%;
+	 color: #fff;
+	 background: #e29803;
 
-#navbar {
-  background-color: #000;*/
-  /*position: fixed;*/
-  width: 100%;*/
-  /*z-index: 1;*/
-  color: #fff;
 }
 
 .navbar-nav li{
 	font-size:16px;
 	font-weight: bold;
-	padding: 5px;
+	padding: 0px 5px;
 }
 
 .navbar-nav li a{
 	text-decoration: none;
 	color: #fff !important;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 }
 .navbar-nav li a:hover{
 	text-decoration: none;
-	color: #fbb532;
+	color: #2c2c2c;
 }
 
 .navbar-nav  li.active a{
-	color: #fbb532 !important;
+	color: #2c2c2c !important;
 }
 .navbar-light .navbar-toggler{
 	background-color: #fff !important;
@@ -110,7 +106,9 @@ p{
   .home-imag{
   	display: none;
   }
+
 }
+
 
 /**********************ABOUT SECTION CSS*************************** */
 #about{
@@ -160,10 +158,11 @@ p{
 
 #about span{
   background:#fcb72e;
-  height: 2px;
+  height: 3px;
   width: 100px;
   position: absolute;
 }
+
 @media only screen and (max-width: 768px){
 	.about-section{
 		flex-direction: column;
@@ -182,17 +181,33 @@ p{
 #service{
 	padding: 5% 0px;
 	background-color: #2c2c2c;
+	
 }
 #service h1{
 	text-align: center;
 	color: #fff;
+	position: relative;
+	padding-bottom: 10px;
 }
+
+#service h1::after{
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0%;
+	right: 0;
+	top: 0;
+	border-bottom:3px solid #fcb72e;
+	transform: translate(-50%);
+	width: 12%;
+}
+
 #service .para {
 	text-align: center;
 	color: #fff;
 	padding-bottom: 15px;
 }
-.service-section1, .service-section2, .service-section3{
+.service-section1, .service-section2, .service-section3, .service-section4, .service-section5, .service-section6{
 	position: relative;
 	margin: 10px;
 }
@@ -226,6 +241,36 @@ p{
 	opacity: .7;
 	background-image: linear-gradient(to bottom right, #f86dc3,#fcb6e1);	
 }
+.service-section4:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	opacity: .7;
+	background-image: linear-gradient(to bottom right, #ff1a1a,#ff8080);	
+}
+.service-section5:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	opacity: .7;
+	background-image: linear-gradient(to bottom right, #4dff4d,#99ff99);	
+}
+.service-section6:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	opacity: .7;
+	background-image: linear-gradient(to bottom right, #ff661a,#ffaa80);	
+}
 .section-info{
 	position: absolute;
 	top: 10%;
@@ -241,11 +286,15 @@ p{
 	font-weight: bold;
 	padding: 10px 0px;
 }
-
+@media only screen and (max-width: 768px){
+	#service h1::after{
+		content: "";
+		width: 40%;
+	}
+}
  /**********************GALLARY SECTION CSS*************************** */
  #gallary{
 	background-color: #313131;
-	
 }
 .gallary-section{
 	width: 100%;
@@ -266,8 +315,9 @@ p{
 .border{
 	width: 180px;
 	height: 4px;
-	background-color: #333;
-	margin: 40px auto;
+	background-color: #fcb72e;
+	margin: 20px auto;
+	border: 1px solid #fcb72e !important;
 }
 .gallary-section .gallary{
 	display: flex;
@@ -310,7 +360,7 @@ p{
 }
 
 
-/**********************TEAM SECTION CSS****************************/
+/***********************TEAM SECTION CSS*****************************/
 #team{
 	padding: 5% 0px;
 	background-color: #2c2c2c;
@@ -318,6 +368,20 @@ p{
 #team h1{
 	text-align: center;
 	padding-bottom: 15px;
+	position: relative;
+
+}
+#team h1::after{
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0%;
+	right: 0;
+	top: 0;
+	border-bottom:3px solid #fcb72e;
+	transform: translate(-50%);
+	width: 12%;
+	margin-bottom: 7px;
 }
 #team .team-imag{
 	position: relative;
@@ -327,8 +391,8 @@ p{
  #team .text {
   position: absolute;
   bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  background: rgb(0, 0, 0);  
+  background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1;
   width: 100%;
   padding: 10px;
@@ -340,10 +404,12 @@ p{
 	padding: 5px;
 	margin: 0px 5px;
 }
-
-
-
-
+@media only screen and (max-width: 768px){
+#team h1::after{
+		content: "";
+		width: 40%;
+	}
+}
 /**********************CONTACT US SECTION CSS****************************/
 #contact{
 	padding: 5% 0px;
@@ -352,13 +418,25 @@ p{
 }
 #contact h1{
 	color: #fff;
-	padding-bottom: 15px;	
+	padding-bottom: 15px;
+	position: relative;	
 }
-
+#contact h1::after{
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0%;
+	right: 0;
+	top: 0;
+	border-bottom:3px solid #fcb72e;
+	transform: translate(-50%);
+	width: 12%;
+}
 .contact-icon{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 20px 0px;
 }
 
 .contact-mail, .contact-location, .contact-phone{
@@ -433,9 +511,6 @@ form .btn:hover{
 	color: #fff;
 }
 
-@media only screen and (min-width: 600px) {
-
-}
 
 @media only screen and (max-width: 768px) {
 	.contact-mail, .contact-location, .contact-phone{
@@ -456,5 +531,47 @@ form .btn:hover{
 	iframe{
 		width: 100% !important;
 	}
+	#contact h1::after{
+		content: "";
+		width: 40%;
+	}
 }
 
+/**********************FOOER SECTION CSS****************************/
+ #footer{
+	padding-top: 5%;
+	background-color: #000000e2;
+	color: #fff;
+}
+#footer ul li{
+	padding: 5px;
+}
+#footer ul li a{
+	color: #fff;
+}
+#footer p{
+	padding: 5px;
+}
+#footer .foot-icon i{
+	padding: 13px;
+	border: 1px solid #fff;
+	border-radius: 50px;
+    width: 45px;
+    text-align: center;
+    color: #fbb532; 
+    box-shadow: 5px 5px 5px #333333;
+    transition: 0.4s;
+}
+#footer .foot-icon i:hover{
+	background-color: #fbb532;
+	color: #fff;
+	border: 1px solid #fbb532;
+}
+#footer .foot-icon{
+	padding: 10px;
+}
+#footer .foot{
+	background-color: #000;
+	text-align: center;
+	padding: 10px;
+}
