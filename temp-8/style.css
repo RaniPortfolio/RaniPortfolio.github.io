@@ -1,7 +1,7 @@
 body{
   margin: 0px
   padding:0px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Courgette', cursive;
   box-sizing: border-box;
 }
 
@@ -174,15 +174,15 @@ p{
 }
 
 #about h1{
-  font-weight: bold;
-    padding-bottom: 5%;
-    font-style: italic;
+    font-weight: bold;
+    padding-bottom:15px;
     text-align: center;
     color: #c52068;
 }
 #about .about-title{
     text-align: center;
     color: #b3b3b3;
+    padding: 15px 15%;
 }
 
 /*first pencil*/ 
@@ -312,7 +312,6 @@ p{
 #gallary h1{
     font-weight: bold;
     padding-bottom: 10px;
-    font-style: italic;
     text-align: center;
     color: #c52068;
 } 
@@ -339,7 +338,6 @@ p{
 #service h1{
   font-weight: bold;
     padding-bottom: 10px;
-    font-style: italic;
     text-align: center;
     color: #c52068;
 }
@@ -402,9 +400,9 @@ p{
 /**********************TEAM SECTION****************************/
 #team{
   padding: 5% 0px;
-  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.6)), url(img/team/photo_1.jpg) center top no-repeat;
   width: 100%;
   text-align: center;
+  background-color: #2f2f2f;
 }
 #team h1{
   font-weight: bold;
@@ -416,6 +414,7 @@ p{
 #team .team-title{
     text-align: center;
     color: #b3b3b3;
+    padding: 15px 15%;
 }
 .team-1, .team-2, .team-3, .team-4{
     border: 2px solid #999999;
@@ -429,12 +428,14 @@ p{
 
 #team .team-info h4{
   font-weight: bold;
-    font-style: italic;
-    color: #ed91b9;
+  color: #ed91b9;
+  letter-spacing: 2px;
 }
+
 #team .team-info p{
   color: #f1f1f1;
   font-size: 16px;
+  letter-spacing: 2px;
 }
 
 @media only screen and (max-width: 768px){
