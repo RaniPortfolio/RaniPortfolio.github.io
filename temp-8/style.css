@@ -182,7 +182,7 @@ p{
 #about .about-title{
     text-align: center;
     color: #b3b3b3;
-    padding: 15px 15%;
+     padding-bottom:15px; 
 }
 
 /*first pencil*/ 
