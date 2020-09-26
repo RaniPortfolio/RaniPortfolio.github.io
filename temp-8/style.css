@@ -57,14 +57,7 @@ p{
   width: 100%;
   height: 100vh;
 }
-/*.animation-area::before{
-  position: absolute;
-  top:0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(to left, #8942a8, #ba382f);
-}*/
+
 .box-area{
   position: absolute;
   top:0;
@@ -187,6 +180,10 @@ p{
     text-align: center;
     color: #c52068;
 }
+#about .about-title{
+    text-align: center;
+    color: #b3b3b3;
+}
 
 /*first pencil*/ 
 .pencil1, .pencil2, .pencil3, .pencil4{
@@ -306,10 +303,37 @@ p{
     width: 526px;
   }
 } 
+
+/********************gallary section css****************************/
+#gallary{
+  padding: 5% 0px;
+  background-color: #000;
+} 
+#gallary h1{
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+    color: #c52068;
+} 
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  background-color: #000;
+}
+
+
 /**********************SERVICE SECTION CSS****************************/
 #service{
   padding: 5% 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)), url(img/photo1.jpg) center top no-repeat fixed;
+  /*background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)), url(img/photo1.jpg) center top no-repeat fixed;*/
   width: 100%;
 }
 #service h1{
@@ -317,7 +341,11 @@ p{
     padding-bottom: 10px;
     font-style: italic;
     text-align: center;
-    color: #e6e6e6;
+    color: #c52068;
+}
+#service .service-title{
+    text-align: center;
+    color: #b3b3b3;
 }
 
 #service .card{
@@ -370,35 +398,11 @@ p{
   background-color: #1bb1e4 !important;
 }
 
-/********************gallary section css****************************/
-#gallary{
-  padding: 5% 0px;
-  background-color: #000;
-} 
-#gallary h1{
-    font-weight: bold;
-    padding-bottom: 10px;
-    font-style: italic;
-    text-align: center;
-    color: #c52068;
-} 
-.swiper-container {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-  background-color: #000;
-}
 
 /**********************TEAM SECTION****************************/
 #team{
   padding: 5% 0px;
-  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.6)), url(img/team/photo_1.jpg) center top no-repeat fixed;
+  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.6)), url(img/team/photo_1.jpg) center top no-repeat;
   width: 100%;
   text-align: center;
 }
@@ -440,6 +444,55 @@ p{
   .team-1, .team-2{
     width: 50% !important;
   }
+}
+
+/**********************CONTACT US SECTION CSS****************************/ 
+#contact{
+  padding: 5% 0px;
+}
+#contact h1{
+  color: #fcb72e;
+  font-size: 2.5em;
+}
+
+#contact .cont-icon{
+  text-align: center;
+  padding-top: 5%;
+}
+
+#contact .cont-icon i{
+  font-size: 25px;
+  padding: 10px;
+  color:#fcb72e;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ffc451;
+  color: white;
+  padding: 10px 60px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  border: 1px solid #ffc451;
+  background-color: #fff;
+  color:#ffc451 
+}
+form{
+   padding: 20px;
+   text-align: center;
 }
 
 /**********************FOTTER SECTION CSS****************************/
