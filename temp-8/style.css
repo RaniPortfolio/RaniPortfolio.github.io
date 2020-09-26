@@ -397,7 +397,7 @@ p{
 /**********************TEAM SECTION****************************/
 #team{
   padding: 5% 0px;
-  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.6)), url(img/team/photo_2.jpg) center top no-repeat fixed;
+  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.6)), url(img/team/photo_1.jpg) center top no-repeat fixed;
   width: 100%;
   text-align: center;
 }
