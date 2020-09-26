@@ -17,6 +17,7 @@ p{
     background-image: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.1));
     width: 100%;
     position: absolute;
+    z-index: 1;
 }
 .navbar{
    color: #fff;
