@@ -215,7 +215,11 @@ h2{
 .about-section1 .about-icon4{
   color:#339966;
 }
-
+.about-cont:hover, .about-cont2:hover, .about-cont3:hover, .about-cont4:hover{
+    border: 1px solid gray;
+    transition: 1s;
+    transform: rotateY(45deg);
+}
 
 /*about-section two*/
 #about h1{
