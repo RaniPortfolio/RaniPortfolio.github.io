@@ -1,12 +1,20 @@
-body{
+*{
   margin: 0px
   padding:0px;
-  font-family: 'Courgette', cursive;
+  font-family: 'Baloo Tammudu 2', cursive;
   box-sizing: border-box;
 }
 
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #000 url('img/loader1.gif') no-repeat center;
+  z-index: 999999;
+}
+
+
 h1{
-  font-family: 'Roboto', sans-serif; 
   font-size: 3em;
 }
 
@@ -134,7 +142,6 @@ p{
 }
 .content h1{
   font-family: 'Courgette', cursive;
-  font-family: 'Courgette', cursive;
     padding-bottom: 25px;
     font-size: 3.5em;
     text-shadow: 3px 8px 7px #000;
@@ -145,7 +152,7 @@ p{
   padding-bottom: 25px;
 }
 .content .btn{
-  padding: 10px 25px;
+    padding: 10px 25px;
     color: white;
     border-color: #fff;
     font-family: 'Courgette', cursive;
@@ -173,147 +180,125 @@ p{
   padding: 5% 0px;
 }
 
+
+/*about-section one*/
+h2{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #c52068;
+  }
+
+.about-section1{
+  padding: 5% 10%;
+}
+
+.about-section1 i{
+  font-size: 30px;
+  color: #df3a81;
+}
+.about-section1 h5{
+  font-weight: bold;
+  padding-top: 20px;
+}
+.about-section1 p{
+  color: #808080;
+}
+.about-section1 .about-icon2{
+  color: #2eb8b8;
+}
+
+.about-section1 .about-icon3{
+  color: #009900;
+}
+
+.about-section1 .about-icon4{
+  color:#339966;
+}
+
+
+/*about-section two*/
 #about h1{
     font-weight: bold;
     padding-bottom:15px;
     text-align: center;
     color: #c52068;
 }
-#about .about-title{
-    text-align: center;
-    color: #b3b3b3;
-     padding-bottom:15px; 
+
+.about-imag{
+  width: 40%; 
+  height: 400px;
+}
+.about-imag img{
+  width: 100%;
+  height: 100%;
 }
 
-/*first pencil*/ 
-.pencil1, .pencil2, .pencil3, .pencil4{
-  background:#ffc334;
-  border-top: 10px solid #ffc268;
-  border-bottom: 10px solid #ffc268;
+.about-info{
+  width: 60%;
+  height: 350px;
+  margin-left: -5%;
+  margin-top: 20px;
+  box-shadow: 14px 20px 15px grey;
+  background-image:linear-gradient(to left,#a92362 45% ,#fff 45%);
+  padding: 5%;
+}
+.about-info span{
+  color: #fff;
 }
 
-.pencil1 p, .pencil2 p, .pencil3 p, .pencil4 p{
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #d89200;
-}
-.pencil1::after, .pencil2::after, .pencil3::after, .pencil4::after {
-  content: "";
-  position: absolute;
-  left: 95%;
-  right: 0px;
-  top: 0;
-  border-style: solid;
-  border-color: transparent  transparent  transparent #e29663;
-  border-width: 27px 44px 38px; 
-}
-.pencil1::before, .pencil2::before, .pencil3::before, .pencil4::before{
-  content: "";
-  position: absolute;
-  left: 95%;
-  right: 0px;
-  top: 0;
-  border-style: solid;
-  border-color: transparent  transparent  transparent #262626;
-  border-width: 20px 44px 38px;
-  transform: scale(.3); 
-  z-index: 1;
+.about-section2{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 }
 
-
-/*second pencil*/
-.pencil2{
-  background:#01858a;
-  border-top: 10px solid #019398;
-  border-bottom: 10px solid #019398;
+.about-section2 p{
+  color: #808080;
 }
-
-.pencil2 p{
-  color: #01acb2;
-}
-.pencil2::after{
-  left: 95%;
-  top: 112px; 
-}
-
-.pencil2::before{
-  left: 95%;
-  top: 112px;
-}
-
-
-/*Third pencil*/
-.pencil3{
-  background: #194d33;
-  border-top: 10px solid #206040;
-    border-bottom: 10px solid #206040;
-}
-.pencil3 p{
-  color:#339966;
-}
-.pencil3::after{
-  top: 224px; 
-}
-
-.pencil3::before{
-  top: 224px;
-}
-
-/*forth pencil*/
-.pencil4{
-  background: #b3b300 ;
-    border-top: 10px solid #cccc00 ;
-    border-bottom: 10px solid #cccc00;
-}
-
-.pencil4 p{
-  color: #999900;
-}
-.pencil4::after{
-  top: 335px;
-}
-
-.pencil4::before{
-  top: 335px;
+.about-section2 .readbtn{
+    padding: 10px 25px;
+    border-color: #861647;
+    font-family: 'Courgette', cursive;
+    color:#fff; 
+    background-color:#861647;
 }
 
 
 @media only screen and (max-width: 768px){
-  .pencil1, .pencil2, .pencil3, .pencil4{
-    width: 300px;
+   .about-section2{
+      flex-direction: column;
+   }
+   .about-imag{
+      width: 100%;
+    }
+    .about-info{
+      width: 100%;
+    }
+   .about-info{
+    margin-left: 0%;
+    background-image:linear-gradient(to top left ,#a92362 15%,#fff 15%);
   }
-  .pencil1::after, .pencil2::after, .pencil3::after, .pencil4::after{
-    display: none;
-  }
-  .pencil1::before, .pencil2::before, .pencil3::before, .pencil4::before{
-    display: none;
-  } 
 }
+
 @media only screen and (min-width: 992px){
-  .pencil1, .pencil2, .pencil3, .pencil4 {
-    width: 441px;
-  }
+  
 }
 @media only screen and (min-width: 1200px){
-  .pencil1, .pencil2, .pencil3, .pencil4 {
-    width: 526px;
-  }
+  
 } 
 
 /********************gallary section css****************************/
 #gallary{
   padding: 5% 0px;
-  background-color: #000;
+  /*background-color: #000;*/
+  background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.2)), url(img/photo-15.jpg) center top no-repeat fixed;
 } 
 #gallary h1{
     font-weight: bold;
     padding-bottom: 10px;
     text-align: center;
-    color: #c52068;
+    color: #fff;
 } 
 .swiper-container {
   width: 100%;
@@ -332,7 +317,6 @@ p{
 /**********************SERVICE SECTION CSS****************************/
 #service{
   padding: 5% 0;
-  /*background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)), url(img/photo1.jpg) center top no-repeat fixed;*/
   width: 100%;
 }
 #service h1{
@@ -344,6 +328,7 @@ p{
 #service .service-title{
     text-align: center;
     color: #b3b3b3;
+    padding: 0px 15%;
 }
 
 #service .card{
@@ -372,10 +357,15 @@ p{
   font-size: 12px;
 }
 #service .card-body .btn{
-  color: #fff;
+    color: #fff;
     border-color: #fff;
-    padding: 2px 10px;
+    padding: 6px 15px;
 }
+#service .card-body .btn1:hover{
+    background-color:#e54c85 
+
+}
+
 #service .card-body .card-image1{
   width: 50%;
 }
@@ -402,18 +392,21 @@ p{
   padding: 5% 0px;
   width: 100%;
   text-align: center;
-  background-color: #2f2f2f;
+  background: linear-gradient(160deg,#db2473, #000);
+}
+#team .row{
+  padding: 0 5%;
 }
 #team h1{
-  font-weight: bold;
+    font-weight: bold;
     padding-bottom: 10px;
     text-align: center;
-    color: #c52068;
+    color: #fff;
 }
 #team .team-title{
     text-align: center;
-    color: #b3b3b3;
-    padding: 15px 15%;
+    color: #fff;
+    padding: 0 15%;
 }
 .team-1, .team-2, .team-3, .team-4{
     border: 2px solid #999999;
@@ -422,17 +415,21 @@ p{
     padding: 5px;
     background-color: #999999;
     box-shadow: 5px 10px 10px rgba(255,255,255,0.2);
-    margin-bottom: 18px;
+    margin-bottom: 20px;
+}
+.team-1:hover,.team-2:hover, .team-3:hover, .team-4:hover {
+  transform: scale(0.9);
+  padding: 0px;
+  border:0;
 }
 
 #team .team-info h4{
   font-weight: bold;
-  color: #ed91b9;
-  letter-spacing: 2px;
+  color: #fff;
 }
 
 #team .team-info p{
-  color: #f1f1f1;
+  color: #fff;
   font-size: 16px;
   letter-spacing: 2px;
 }
@@ -451,8 +448,9 @@ p{
   padding: 5% 0px;
 }
 #contact h1{
-  color: #fcb72e;
+  color: #c52068;
   font-size: 2.5em;
+  text-align: center;
 }
 
 #contact .cont-icon{
@@ -463,7 +461,7 @@ p{
 #contact .cont-icon i{
   font-size: 25px;
   padding: 10px;
-  color:#fcb72e;
+  color:#c52068;
 }
 input[type=text], select, textarea {
   width: 100%;
@@ -490,22 +488,57 @@ input[type=submit]:hover {
   background-color: #fff;
   color:#ffc451 
 }
+
 form{
    padding: 20px;
    text-align: center;
 }
 
-/**********************FOTTER SECTION CSS****************************/
+form .btn{
+    padding: 10px 25px;
+    color: #861647;
+    border-color: #861647;
+    font-family: 'Courgette', cursive;  
+}
+form .btn:hover{
+  background-color: #861647;
+  color: #fff;
+}
 
-.cont-icons{
-  border: 1px solid gray;
+/**********************FOOER SECTION CSS****************************/
+ #footer{
+  padding-top: 5%;
+  background-color: #2f2f2f;
+  color: #fff;
+}
+
+#footer ul li{
+  padding: 5px;
+}
+#footer ul li a{
+  color: #fff;
+}
+#footer p{
+  padding: 5px;
+}
+
+#footer .foot-icon i{
+    border: 1px solid gray;
     border-radius: 50px;
     width: 40px;
     height: 40px;
-    padding: 8px;
+    padding: 9px;
+    margin: 0 10px;
 }
-.cont-icons:hover{
-  background-color: #00cc66;
-  border: 1px solid #00cc66;
 
+#footer .foot-icon{
+  padding: 10px;
+}
+#footer .foot{
+  background-color: #1a1a1a;
+  padding: 10px;
+  text-align: center;
+}
+.foot p{
+  float: right;
 }

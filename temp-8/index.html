@@ -12,13 +12,18 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<!-- GOOGLE FONT -->
-	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 
 	<!-- swiper carousel -->
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 </head>
-<body>
+<body onload="myfunction()">
+
+<div id="loading"></div>
 
 <header>
   <div class="header">
@@ -78,36 +83,54 @@
 
 <!-- **********************ABOUT US SECTION**************************** -->
 <section id="about">
-  <div class="container">
-    <h1>About Us</h1>
-    <p class="about-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+  <div class="container-fluid">
+     <h2>What We Stand For</h2>
 
-    <div class="row">
-      <div class="col-md-6">
-        <div class="pencil1" style="">
-          <!-- <h3>First pencil</h3> -->
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting Lorem</p>
-        </div>
-
-        <div class="pencil2 mt-5" style="">
-          <!-- <h3>Second pencil</h3> -->
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </div>
-
-        <div class="pencil3 mt-5" style="">
-        <!-- <h3>Third Ipsum</h3> -->
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </div>
-
-        <div class="pencil4 mt-5" style="">
-        <!-- <h3>Forth Ipsum</h3> -->
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+     <div class="row about-section1">
+      <div class="col-md-3 text-center">
+        <div class="">
+          <i class="fa fa-slack"></i>
+          <h5>Responsive</h5>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
         </div>
       </div>
 
-      <div class="col-md-6" style="">
-         <img src="img/about-image.jpg" style="width: 100%;height: 400px;">
+      <div class="col-md-3 text-center">
+        <div class="">
+          <i class="fa fa-stack-exchange about-icon2"></i>
+          <h5>Quality</h5>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
+        </div>
       </div>
+
+      <div class="col-md-3 text-center">
+        <div class="">
+          <i class="fa fa-twitch about-icon3"></i>
+          <h5>Support</h5>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
+        </div>
+      </div>
+
+       <div class="col-md-3 text-center">
+        <div class="">
+          <i class="fa fa-wpforms about-icon4"></i>
+          <h5>Team Work</h5>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
+        </div>
+      </div>
+     </div>
+
+    <div class="about-section2">
+      <div class="about-imag">
+        <img src="img/about-image1.jpg">
+      </div>
+
+      <div class="about-info text-center">
+        <h1>About <span>Us</span></h1>
+        <p><q>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.</q></p>       
+        <button type="button" class="btn readbtn">READ <span>MORE</span></button>
+      </div>
+
     </div>
   </div>
 </section>
@@ -118,7 +141,7 @@
 
   <h1>Gallary</h1>
  <!-- Swiper -->
-  <div class="swiper-container" style="width: 100%;padding-top: 50px;padding-bottom: 50px;">
+  <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide" style="background-position: center;background-size: cover;
         width: 300px;height: 300px;background-color: #000;">
@@ -152,7 +175,7 @@
 <section id="service">
   <div class="container">
     <h1>Our Services</h1>
-    <p class="service-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+    
 
     <div class="row">
       <!-- first card section -->
@@ -168,7 +191,7 @@
               <h4><span class="fist-num"></span>Our<br><span> Services</span>
               </h4>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <button type="button" class="btn btn-outline-success">Read More
+              <button type="button" class="btn  btn1">Read More
               </button>
             </div>
             
@@ -199,11 +222,11 @@
               <h4><span class="fist-num"></span>Our<br><span> Services</span>
               </h4>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <button type="button" class="btn btn-outline-success">Read More
+              <button type="button" class="btn  btn2">Read More
               </button>
             </div>
             
-            <img src="img/photo-14.jpg" class="card-image1">
+            <img src="img/photo1.jpg" class="card-image1">
           </div>
           <div class="card-footer">
             <div>
@@ -228,11 +251,11 @@
             <div class="service-info">
               <h4>Our<br><span> Services</span></h4>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <button type="button" class="btn btn-outline-success">Read More
+              <button type="button" class="btn btn-outline-success btn3">Read More
               </button>
             </div>
             
-            <img src="img/photo-14.jpg" class="card-image1">
+            <img src="img/image_2.jpg" class="card-image1">
           </div>
           <div class="card-footer">
             <div>
@@ -257,11 +280,11 @@
             <div class="service-info">
               <h4>Our<br><span> Services</span></h4>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <button type="button" class="btn btn-outline-success">Read More
+              <button type="button" class="btn btn-outline-success btn4">Read More
               </button>
             </div>
             
-            <img src="img/photo-14.jpg" class="card-image1">
+            <img src="img/images_1.jpg" class="card-image1">
           </div>
           <div class="card-footer">
             <div>
@@ -326,9 +349,24 @@
 <section id="contact">
   <div data-aos="fade-down"data-aos-duration="1000">
     <div class="container">
-      <!-- <h1><b><i>CONTACT US</i></b></h1> -->
+      <h1><b>CONTACT US</b></h1>
         <div class="row">
-            <!-- <div class="col-sm-3 col-sm-3">
+            
+            <div class="col-md-9">
+              <form action="/action_page.php">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <input type="text" id="email" name="Email" placeholder="Your Email Id..">
+                  
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                  <button type="button" class="btn btn-outline-success">Submit</button>
+              </form>
+            </div>
+
+            <div class="col-sm-3 col-sm-3 text-center">
+              <h2>Get In Touch</h2>
+              <p>You cant contact us</p>
               <div class="cont-icon">
                 <i class="fa fa-map-marker"></i>
                 <h5><b>Location:</b></h5>
@@ -346,69 +384,61 @@
                 <h5><b>Call:</b></h5>
                 <p>+1 5589 55488 55s</p>
               </div>
-            </div> -->
-
-            <div class="col-md-12" style="display: flex;justify-content: center;align-items: center;">
-              <form action="/action_page.php">
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                  
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-                  <button type="button" class="btn btn-outline-success">Submit</button>
-              </form>
             </div>
-          </div>
         </div>
-      </div>
-      </section>
+    </div>
+  </div>
+</section>
 
      
 
 <!-- Footer -->
-<footer class="page-footer font-small special-color-dark pt-4 bg-dark">
-
-  <!-- Footer Elements -->
+<footer id="footer">
+<div data-aos="fade-down" data-aos-duration="1000">
   <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h1><b>Lorem Ipsum</b></h1>
 
-    <!-- Social buttons -->
-    <ul class="list-unstyled list-inline text-center">
-      <li class="list-inline-item cont-icons bg-primary">
-        <a class="btn-floating btn-fb mx-1">
-          <i class="fa fa-facebook-f text-white"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item cont-icons bg-info">
-        <a class="btn-floating btn-tw mx-1">
-          <i class="fa fa-twitter text-white"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item cont-icons bg-danger">
-        <a class="btn-floating btn-gplus mx-1">
-          <i class="fa fa-google-plus text-white"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item cont-icons bg-primary">
-        <a class="btn-floating btn-li mx-1">
-          <i class="fa fa-linkedin text-white"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item cont-icons bg-danger">
-        <a class="btn-floating btn-dribbble mx-1">
-          <i class="fa fa-dribbble text-white"> </i>
-        </a>
-      </li>
-    </ul>
-    <!-- Social buttons -->
+        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna </p>
+      </div>
+     
+      <div class="col-md-4">
+        <h5><b>CONTACT US:</b></h5>
 
+
+        <p>
+          A108 Adam Street
+          New York, NY 535022
+          United States</p>
+
+          <span>Phone:</span> +1 5589 55488 55 <br>
+          <span>Email:</span> info@example.com
+
+      </div>
+
+      <div class="col-md-4">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href=""> About us</a></li>
+          <li><a href=""> Services</a></li>
+          <li><a href="">Terms of service</a></li>
+          <li><a href=""> Privacy policy</a></li>
+        </ul>
+      </div>
+        
+    </div>
   </div>
-  <!-- Footer Elements -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-   
-  </div>
-  <!-- Copyright -->
+</div>
+<div class="foot">
+    <div class="foot-icon">
+      <i class="fa fa-twitter bg-info"></i>
+      <i class="fa fa-facebook bg-primary"></i>
+      <i class="fa fa-google-plus bg-danger"></i>
+      <i class="fa fa-linkedin bg-primary"></i>
+       <i class="fa fa-dribbble bg-danger"> </i>
+    </div>
+</div>
 
 </footer>
 <!-- Footer -->
@@ -445,5 +475,14 @@
     });
 
   </script>
+
+  <script type="text/javascript">
+    var preloader=document.getElementById('loading');
+
+    function myfunction(){
+      preloader.style.display='none';
+    }
+  </script>
+
 </body>
 </html>
