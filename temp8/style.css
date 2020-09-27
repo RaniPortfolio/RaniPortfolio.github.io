@@ -54,7 +54,6 @@ p{
   background-color: #fff !important;
 }
 
-
 /**********************HOME SECTION CSS****************************/
 #home{
     text-align: center;
@@ -173,7 +172,6 @@ p{
   .content p{
     font-size: 1.5em;
   }
-
 }
 
 /**********************ABOUT US SECTION****************************/
@@ -285,14 +283,10 @@ h2{
     margin-left: 0%;
     background-image:linear-gradient(to top left ,#a92362 15%,#fff 15%);
   }
+  .about-section2 .readbtn{
+    padding: 5px;
+  }
 }
-
-@media only screen and (min-width: 992px){
-  
-}
-@media only screen and (min-width: 1200px){
-  
-} 
 
 /********************gallary section css****************************/
 #gallary{
@@ -318,7 +312,6 @@ h2{
   height: 300px;
   background-color: #000;
 }
-
 
 /**********************SERVICE SECTION CSS****************************/
 #service{
@@ -391,7 +384,6 @@ h2{
 .forth-card{
   background-color: #1bb1e4 !important;
 }
-
 
 /**********************TEAM SECTION****************************/
 #team{
@@ -511,7 +503,8 @@ form .btn:hover{
   color: #fff;
 }
 
-/**********************FOOER SECTION CSS****************************/
+
+/**********************FOOTER SECTION CSS****************************/
  #footer{
   padding-top: 5%;
   background-color: #2f2f2f;
