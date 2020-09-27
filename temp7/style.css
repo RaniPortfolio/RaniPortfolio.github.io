@@ -17,8 +17,7 @@ p{
 .navbar{
 	 width: 100%;
 	 color: #fff;
-	 background: #e29803;
-
+	 background: #000;
 }
 
 .navbar-nav li{
@@ -35,11 +34,11 @@ p{
 }
 .navbar-nav li a:hover{
 	text-decoration: none;
-	color: #2c2c2c;
+	color: #fbb532;
 }
 
 .navbar-nav  li.active a{
-	color: #2c2c2c !important;
+	color: #fbb532 !important;
 }
 .navbar-light .navbar-toggler{
 	background-color: #fff !important;
