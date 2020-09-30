@@ -1,8 +1,7 @@
 *{
   margin: 0px
   padding:0px;
-  box-sizing: border-box;
-  font-family: 'Courgette', cursive;
+  box-sizing: border-box
 }
 #loading{
   position: fixed;
@@ -16,6 +15,7 @@ h1{
   font-size: 3em;
   color: #94c557;
   font-weight: bold;
+   font-family: 'Courgette', cursive;
  }
 
  p{
