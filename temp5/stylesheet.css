@@ -77,151 +77,17 @@ p{
  	padding-bottom: 15px;
  }
 
-  /**********************ABOUT US SECTION CSS*************************** */
+ /**********************ABOUT US SECTION CSS*************************** */
  #about{
-  	padding: 5% 0px;
-  	text-align: center;
-  	position: relative;
-  	min-height: 100vh;
- }
- #about h1{
- 	color: #9bdc28;
- 	font-weight: bold;
- 	padding-bottom: 20px;
+ 	padding: 5% 0px;
+ 	background-image: linear-gradient(to right, #000 50% , #9bdc28 50%);
  }
 
- #about .card{
- 	position: relative;
- 	width: 320px;
- 	height: 450px;
- 	background: #232323;
- 	border-radius: 20px;
- 	overflow: hidden;
- 	border: 0;
- 	margin: 20px 0px;
- }
- #about .card:before{
- 	content: '';
- 	position: absolute;
- 	top: 0;
- 	left: 0;
- 	width: 100%;
- 	height: 100%;
- 	background: #9bdc28;
- 	clip-path: circle(150px at 80% 20%);
- 	transition: 0.5s ease-in-out;
- }
- #about .card:hover:before{
- 	clip-path: circle(300px at 80% -20%);
- }
-
- #about .card .imgBx{
- 	position: absolute;
- 	top: 50%;
- 	transform: translateY(-50%);
- 	z-index: 10000;
- 	width: 100%;
- 	height: 220px;
- 	transition: 0.5s
- }
-
- #about .card:hover .imgBx{
- 	top: 5%;
- 	transform: translateY(5%);
- }
-
-#about .card .imgBx img{
-	position: absolute;
-	top: 30%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 250px;
-}
-
-#about .card .contentBx{
-	position: absolute;
-	bottom: 10px;
-	width: 100%;
-	height: 100px;
-	text-align: center;
-	transition: 1s;
-	z-index: 10;
-}
-#about .card:hover .contentBx{
-	height: 200px;
-}
-#about .card .contentBx h2{
-	position: relative;
-	font-weight: 600;
-	letter-spacing: 1px;
-	color: #fff;
-}
-#about .card .contentBx p{
-	color: #fff;
-}
-#about .card .contentBx .icons{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 8px 20px;
-	transition: 0.5s;
-	opacity: 0;
-}
-#about .card:hover .contentBx .icons{
-	opacity: 1;
-	visibility: visible;
-	transition-delay: 0.5s;
-}
-
-#about .card .contentBx .icons h3{
-	color: #fff;
-	font-weight: 300px;
-	font-size: 14px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin-right: 10px
-}
-#about .card .contentBx .icons i{
-    width: 26px; 
-	height: 26px;
-	text-align:center;
-	line-height:26px;
-	font-size: 14px;
-	display: inline-block;
-	color: #111;
-	background: #fff;
-	margin: 0 5px;
-	transition: 0.5s;
-	color: #111;
-	border-radius: 4px;
-	cursor: pointer;
-}
-#about .card .contentBx .icons i:hover{
-	background: #9bdc28;
-	color: #fff;
-}
-
-#about .card .contentBx a{
-	display: inline-block;
-	padding: 8px 30px;
-	background: #fff;
-	border-radius: 25px;
-	text-decoration: none;
-	font-weight: 600;
-	color: #111;
-	opacity: 0;
-	transform: translateY(50px);
-	transition: 0.5s
-}
-#about .card:hover .contentBx a{
-	opacity: 1;
-	transform: translateY(0px);
-}
 
 /**********************services SECTION CSS*************************** */
 #services{
 	/*background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.6)), url(img/image_3.jpg) center top no-repeat fixed;*/
-    background-image: linear-gradient(to bottom right, #000 60% , #9bdc28 60%);
+    /*background-image: linear-gradient(to bottom right, #000 60% , #9bdc28 60%);*/
     width: 100%;
     height: auto;
     text-align: center;
@@ -304,7 +170,7 @@ p{
 }
 
 /**********************TEAM SECTION CSS****************************/
-#team{
+/*#team{
 	padding: 5% 0px;
 	text-align: center;
 }
@@ -321,8 +187,8 @@ p{
 #team .overlay{
   position: absolute; 
   background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
+  background: rgba(0, 0, 0, 0.5);*/ 
+  /*color: #f1f1f1; 
   width: 100%;
   transition: .5s ease;
   opacity:0;
@@ -362,8 +228,146 @@ p{
 #team #team-img-4{
 	position: relative;
 	margin: 10px;
+}*/
+#team{
+  	padding: 5% 0px;
+  	text-align: center;
+  	position: relative;
+  	min-height: 100vh;
+ }
+ #team h1{
+ 	color: #9bdc28;
+ 	font-weight: bold;
+ 	padding-bottom: 20px;
+ }
+
+ #team .card{
+ 	position: relative;
+ 	width: 320px;
+ 	height: 450px;
+ 	background: #232323;
+ 	border-radius: 20px;
+ 	overflow: hidden;
+ 	border: 0;
+ 	margin: 20px 0px;
+ }
+ #team .card:before{
+ 	content: '';
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	background: #9bdc28;
+ 	clip-path: circle(150px at 80% 20%);
+ 	transition: 0.5s ease-in-out;
+ }
+ #team .card:hover:before{
+ 	clip-path: circle(300px at 80% -20%);
+ }
+
+ #team .card .imgBx{
+ 	position: absolute;
+ 	top: 50%;
+ 	transform: translateY(-50%);
+ 	z-index: 10000;
+ 	width: 100%;
+ 	height: 220px;
+ 	transition: 0.5s
+ }
+
+ #team .card:hover .imgBx{
+ 	top: 5%;
+ 	transform: translateY(5%);
+ }
+
+#team .card .imgBx img{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 250px;
 }
 
+#team .card .contentBx{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	transition: 1s;
+	z-index: 10;
+}
+#team .card:hover .contentBx{
+	height: 200px;
+}
+#team .card .contentBx h2{
+	position: relative;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #fff;
+}
+#team .card .contentBx p{
+	color: #fff;
+}
+#team .card .contentBx .icons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 20px;
+	transition: 0.5s;
+	opacity: 0;
+}
+#team .card:hover .contentBx .icons{
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0.5s;
+}
+
+#team .card .contentBx .icons h3{
+	color: #fff;
+	font-weight: 300px;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-right: 10px
+}
+#team .card .contentBx .icons i{
+    width: 26px; 
+	height: 26px;
+	text-align:center;
+	line-height:26px;
+	font-size: 14px;
+	display: inline-block;
+	color: #111;
+	background: #fff;
+	margin: 0 5px;
+	transition: 0.5s;
+	color: #111;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#team .card .contentBx .icons i:hover{
+	background: #9bdc28;
+	color: #fff;
+}
+
+#team .card .contentBx a{
+	display: inline-block;
+	padding: 8px 30px;
+	background: #fff;
+	border-radius: 25px;
+	text-decoration: none;
+	font-weight: 600;
+	color: #111;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: 0.5s
+}
+#team .card:hover .contentBx a{
+	opacity: 1;
+	transform: translateY(0px);
+}
 
 /**********************CONTACT SECTION CSS****************************/
 #contact{

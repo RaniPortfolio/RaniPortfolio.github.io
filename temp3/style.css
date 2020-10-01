@@ -67,6 +67,7 @@ h1{
   background-size: 100% 100%;
   color: #fff;
 }
+
 .content{
     position: absolute;
     top: 50%;
@@ -74,11 +75,14 @@ h1{
     transform: translate(-50%, -50%);
     width: 50%;
 }
-.content h1{
+.content .title{
     font-family: 'Courgette', cursive;
     padding-bottom: 25px;
     font-size: 3.5em;
     text-shadow: 3px 8px 7px #000;
+    /*background: linear-gradient(to right,#fff,#94c557);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;*/
 
 }
 .content p{
@@ -384,7 +388,7 @@ h1{
 
 /***********************Organic Magic SECTION*****************************/
 #organic-magic{
-  padding: 5%;
+ 
   background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.2)), url(img/image3.jpg) center top no-repeat fixed;
   width: 100%;
   height: auto;
