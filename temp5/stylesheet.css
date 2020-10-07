@@ -217,7 +217,7 @@ p{
   	text-align: center;
   	position: relative;
   	min-height: 100vh;
-  	background: #262626;
+  	background: #333333;
  }
  #team h1{
  	color: #8c8c8c;
@@ -365,7 +365,7 @@ p{
 #contact{
 	padding: 5% 0px;
 	text-align: center;
-	background: #333333;
+	background: #262626;
 }
 #contact h1{
 	color: #8c8c8c;
