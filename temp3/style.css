@@ -7,7 +7,7 @@
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #000 url('img/loader.gif') no-repeat center;
+  background: #141414 url('img/loader.gif') no-repeat center;
   z-index: 999999;
 }
 
@@ -429,7 +429,7 @@ h1{
 	}
 	.organic-magic-content{
 	  width: 100%;
-    padding: 5%;
+    text-align: center;
 	}
 	.organic-magic-text{
 	  width: 300px;

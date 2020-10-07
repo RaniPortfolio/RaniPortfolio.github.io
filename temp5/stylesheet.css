@@ -53,7 +53,7 @@ p{
  #home{
  	background: linear-gradient(rgba(2, 2, 2, 0.2), rgba(0, 0, 0, 0.3)), url(img/images_1.jpg) center top no-repeat fixed;
     width: 100%;
-    height: 600px;
+    height: 100vh;
     clip-path: polygon(100% 0%,100% 75%,50% 100%,0 75%,0 0); 
     position: relative;	
     text-align: center;
@@ -72,30 +72,23 @@ p{
  	color: #fff;
  	border-radius: 20px;
     padding: 10px 30px;
+    border-color: #9bdc28;
  }
  #home .home-sect h1{
  	padding-bottom: 15px;
  }
 
- /**********************ABOUT US SECTION CSS*************************** */
- #about{
- 	padding: 5% 0px;
- 	background-image: linear-gradient(to right, #000 50% , #9bdc28 50%);
+ .home-sect .btn:hover{
+ 	background:  #9bdc28;
+ 	border:0;
  }
 
-
-/**********************services SECTION CSS*************************** */
-#services{
-	/*background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.6)), url(img/image_3.jpg) center top no-repeat fixed;*/
-    /*background-image: linear-gradient(to bottom right, #000 60% , #9bdc28 60%);*/
-    width: 100%;
+/**********************Features SECTION CSS*************************** */
+#features{
+	width: 100%;
     height: auto;
     text-align: center;
     padding: 5% 0px;
-}
-#services .sub-text{
-	color: #b3b3b3;
-	margin-top: 10px;
 }
 
 #services h5{
@@ -103,55 +96,68 @@ p{
 }
 
 .textbox-1, .textbox-2, .textbox-3{
-	color: #fff;
 	padding: 20px;
 	border-radius: 10px;
 	margin: 10px;
   	-webkit-transition: .3s ease;
   	transition: .3s ease;
+  	text-align: center;
 }
-.textbox-1{
-	background: #008080;
-}
- .textbox-2{
-	background: #2d8659;
-}
-.textbox-3{
-	background: #b3b300;
+.textbox-1 i, .textbox-2 i, .textbox-3 i{
+	color: #9bdc28;
 }
 
-.textbox-1 i{
-	font-size: 30px;
-	color: #fff !important;
-}
-.textbox-2 i{
-	font-size: 30px;
-	color: #fff !important;
-}
-.textbox-3 i{
-	font-size: 30px;
-	color: #fff !important;
-}
 .textbox-1 .btn, .textbox-2 .btn, .textbox-3 .btn{
 	color: #fff;
     border-top: 1px solid #fff;
 }
 
 .textbox-1:hover, .textbox-2:hover, .textbox-3:hover{
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+  transform: translateY(-20px);
 }
 
-.textbox-1:hover i, .textbox-2:hover i, .textbox-3:hover i{
-	 transform: rotate(90deg);
+
+ /**********************ABOUT US SECTION CSS*************************** */
+ #about{
+ 	padding-top: 5%;
+ 	background-image: linear-gradient(to right, #000 70% , #9bdc28 30%);
+ 	color: #fff;
+ 	width: 100%;
+ }
+#about h1{
+	text-align: center;
+	background-image: linear-gradient(to left, #000 70% , #9bdc28 30%);
+}
+#about .about-imag img{
+	width: 100%;
+	height: 540px;
 }
 
+#about .about-content h2{
+	font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+#about .about-content ul li{
+	padding-bottom: 20px;
+    font-size: 18px;
+}
+#about .about-content .get-to-btn{
+	margin: 10px;
+ 	color: #f7f7f7;
+ 	border-radius: 20px;
+    padding: 10px 30px;
+    background:#9bdc28;
+    border: 0; 
+}
 @media only screen and (max-width: 768px) {
- 	#services{
-    	background-image: linear-gradient(to bottom right, #000 60% , #000 60%);
-	} 
+ 	#about .about-content{
+ 		text-align: center;
+ 	}
 }
+
+
 /**********************OUR SKILLS SECTION CSS****************************/
 #our-skills{
 	padding: 5% 0px;
