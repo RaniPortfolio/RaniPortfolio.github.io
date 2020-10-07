@@ -1,13 +1,13 @@
 body{
 	margin: 0px
 	padding:0px;
-	font-family: "Times New Roman", Times, serif;
+	box-sizing: border-box;
 }
 
 h1{
-	font-family: 'Roboto', sans-serif;
 	color: #fff; 
 	font-size: 3em;
+	letter-spacing: 2px;
 }
 p{
 	font-size: 18px;
@@ -39,11 +39,11 @@ p{
 }
 .navbar-nav li a:hover{
 	text-decoration: none;
-	color: #29a329;
+	color: #9bdc28;
 }
 
 .navbar-nav  li.active a{
-	color: #29a329 !important;
+	color: #9bdc28 !important;
 }
 .navbar-light .navbar-toggler{
 	background-color: #fff !important;
@@ -51,10 +51,9 @@ p{
 
  /**********************HOME SECTION CSS*************************** */
  #home{
- 	background: linear-gradient(rgba(2, 2, 2, 0.2), rgba(0, 0, 0, 0.3)), url(img/images_1.jpg) center top no-repeat fixed;
+ 	background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.5)), url(img/image_3.jpg) center top no-repeat fixed;
     width: 100%;
     height: 100vh;
-    clip-path: polygon(100% 0%,100% 75%,50% 100%,0 75%,0 0); 
     position: relative;	
     text-align: center;
  }
@@ -65,8 +64,14 @@ p{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: #fff;
- 
+	width: 70%;
  }
+
+ .home-sect p{
+ 	font-weight: 400;
+ 	font-size: 20px;
+ }
+
  .home-sect .btn{
  	margin: 10px;
  	color: #fff;
@@ -82,62 +87,35 @@ p{
  	background:  #9bdc28;
  	border:0;
  }
-
-/**********************Features SECTION CSS*************************** */
-#features{
-	width: 100%;
-    height: auto;
-    text-align: center;
-    padding: 5% 0px;
-}
-
-#services h5{
-	padding-top: 10px;
-}
-
-.textbox-1, .textbox-2, .textbox-3{
-	padding: 20px;
-	border-radius: 10px;
-	margin: 10px;
-  	-webkit-transition: .3s ease;
-  	transition: .3s ease;
-  	text-align: center;
-}
-.textbox-1 i, .textbox-2 i, .textbox-3 i{
-	color: #9bdc28;
-}
-
-.textbox-1 .btn, .textbox-2 .btn, .textbox-3 .btn{
-	color: #fff;
-    border-top: 1px solid #fff;
-}
-
-.textbox-1:hover, .textbox-2:hover, .textbox-3:hover{
-  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
-  transform: translateY(-20px);
-}
-
-
+@media only screen and (max-width: 768px) {
+ 	.home-sect{
+ 		width: 100%;
+ 	}
+ }
  /**********************ABOUT US SECTION CSS*************************** */
  #about{
  	padding-top: 5%;
- 	background-image: linear-gradient(to right, #000 70% , #9bdc28 30%);
+ 	background-image: linear-gradient(to right,#262626 70% , #9bdc28 30%);
  	color: #fff;
  	width: 100%;
  }
 #about h1{
 	text-align: center;
-	background-image: linear-gradient(to left, #000 70% , #9bdc28 30%);
+	background-image: linear-gradient(to left, #262626 60% , #9bdc28 40%);
+	position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 24.3rem;
 }
+
 #about .about-imag img{
 	width: 100%;
 	height: 540px;
 }
 
 #about .about-content h2{
-	font-size: 40px;
     font-weight: 800;
-    padding-bottom: 20px;
+    letter-spacing: 2px;
 }
 #about .about-content ul li{
 	padding-bottom: 20px;
@@ -152,20 +130,65 @@ p{
     border: 0; 
 }
 @media only screen and (max-width: 768px) {
+ 	#about{
+ 		background-image: linear-gradient(to right, #262626 70% , #262626 30%);
+ 	}
  	#about .about-content{
  		text-align: center;
  	}
+ 	#about h1{
+ 		display:none;
+ 	}
 }
 
+
+/**********************SERVICE SECTION CSS*************************** */
+#service{
+	width: 100%;
+    height: auto;
+    padding: 5% 0px;
+    background:#333333;
+    color: #fff;
+    text-align: center;
+}
+
+#services h5{
+	padding-top: 10px;
+}
+
+.textbox-1, .textbox-2, .textbox-3{
+	padding: 20px;
+	border-radius: 10px;
+	margin: 10px;
+  	-webkit-transition: .3s ease;
+  	transition: .3s ease;
+}
+.textbox-1 i, .textbox-2 i, .textbox-3 i{
+	color: #9bdc28;
+	padding: 15px;
+	border-radius: 50%;
+	background: #404040;
+}
+
+.textbox-1 .btn, .textbox-2 .btn, .textbox-3 .btn{
+	color: #fff;
+    border-top: 1px solid #fff;
+}
+
+.textbox-1:hover, .textbox-2:hover, .textbox-3:hover{
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+  transform: translateY(-20px);
+}
 
 /**********************OUR SKILLS SECTION CSS****************************/
 #our-skills{
 	padding: 5% 0px;
 	text-align: center;
+	background: #262626;
 }
 #our-skills h1{
-	color: #9bdc28 !important;
-	padding: 10px;
+	color: #8c8c8c !important;
+	padding-bottom: 20px;
 }
 #our-skills p{
 	padding: 20px;
@@ -176,77 +199,23 @@ p{
 }
 
 /**********************TEAM SECTION CSS****************************/
-/*#team{
-	padding: 5% 0px;
-	text-align: center;
-}
-#team h1{
-	color: #9bdc28 !important;
-}
-#team p{
-	padding-bottom: 5px;
-	color: #bfbfbf;
-}
-#team .team-text{
-	color: #666666;
-}
-#team .overlay{
-  position: absolute; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);*/ 
-  /*color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: #fff;
-  font-size: 20px;
-  top: 0%;
-  height: 250px;
-  padding-top: 30%;
-}
-#team #team-img:hover .overlay {
-  opacity: 1;
-}
-#team #team-img{
-	position: relative;
-	margin: 10px;
-}
-#team .overlay i{
-	padding: 5px;
-}
-#team #team-img-2:hover .overlay {
-  opacity: 1;
-}
-#team #team-img-2{
-	position: relative;
-	margin: 10px;
-}
-#team #team-img-3:hover .overlay {
-  opacity: 1;
-}
-#team #team-img-3{
-	position: relative;
-	margin: 10px;
-}
-#team #team-img-4:hover .overlay {
-  opacity: 1;
-}
-#team #team-img-4{
-	position: relative;
-	margin: 10px;
-}*/
 #team{
   	padding: 5% 0px;
   	text-align: center;
   	position: relative;
   	min-height: 100vh;
+  	background: #262626;
  }
  #team h1{
- 	color: #9bdc28;
+ 	color: #8c8c8c;
  	font-weight: bold;
  	padding-bottom: 20px;
  }
-
+#team .team-section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
  #team .card{
  	position: relative;
  	width: 320px;
@@ -307,7 +276,7 @@ p{
 #team .card:hover .contentBx{
 	height: 200px;
 }
-#team .card .contentBx h2{
+#team .card .contentBx h3{
 	position: relative;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -374,11 +343,16 @@ p{
 	opacity: 1;
 	transform: translateY(0px);
 }
-
+@media only screen and (max-width: 768px) {
+ 	#team .team-section{
+ 		flex-direction: column;
+ 	}
+ }
 /**********************CONTACT SECTION CSS****************************/
 #contact{
 	padding: 5% 0px;
 	text-align: center;
+	background: #333333;
 }
 #contact h1{
 	color: #9bdc28;
@@ -391,13 +365,13 @@ p{
 
 .flex-container{
 	display: flex;
-	background-color: #fff;
 	position: relative;
 	height: 450px;
 	justify-content: center;
+	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 .con-sect-2{
-	clip-path: polygon(59% 0, 100% 0%, 100% 100%, 0 100%);
+	clip-path: polygon(70% 0, 100% 0%, 100% 100%, 0 100%);
 	background-color: #9bdc28;
 	width: 100%;
 }
@@ -460,18 +434,24 @@ form .btn:hover{
 #footer p{
 	padding: 5px;
 }
-#footer .foot-icon i{
-	padding: 13px;
-	border: 1px solid #fff;
-	border-radius: 10px; 
+
+#footer .foot-icon{
+	padding-top: 10px;
 }
+#footer .foot-icon i{
+	padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+   margin-left: 7px; 
+}
+
 #footer .foot-icon i:hover{
 	background-color: #9bdc28;
 }
 
-#footer .foot-icon{
-	padding: 10px;
-}
 #footer .foot{
 	background-color: #000;
 	text-align: center;
