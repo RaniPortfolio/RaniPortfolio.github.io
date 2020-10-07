@@ -84,10 +84,16 @@ p{
  	color: #fff;
  	border-radius: 20px;
     padding: 10px 30px;
-    border-color: #9bdc28;
+    background:  #9bdc28;
+ 	border:0;
  }
  #home .home-sect h1{
  	padding-bottom: 15px;
+ 	background: linear-gradient(180deg, #fff 50%, #9bdc28 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 4rem;
  }
 
  .home-sect .btn:hover{
