@@ -16,7 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body onload="myfunction()">
+
+<div id="loading"></div>
+
 <header>
 	<div class="header">
 	<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
@@ -485,8 +488,12 @@
     </div>
   </div>
 </section>
-<!-- *******************************FOOTER SECTION***************************** -->
 
+ <!-- TOP BUTTON -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      
+
+<!-- *******************************FOOTER SECTION***************************** -->
 <footer id="footer">
 	<svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
   		<path fill="#fff" fill-opacity="1" d="M0,96L120,80C240,64,480,32,720,32C960,32,1200,64,1320,80L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
@@ -549,5 +556,37 @@
     <script>
   		AOS.init();
 	</script>
+
+	<!-- loader -->
+	  <script type="text/javascript">
+	    var preloader=document.getElementById('loading');
+
+	    function myfunction(){
+	      preloader.style.display='none';
+	    }
+	  </script>
+
+	  <script>
+	    //TOP button
+	    var mybutton = document.getElementById("myBtn");
+
+	    // When the user scrolls down 20px from the top of the document, show the button
+	    window.onscroll = function() {scrollFunction()};
+
+	    function scrollFunction() {
+	      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	        mybutton.style.display = "block";
+	      } else {
+	        mybutton.style.display = "none";
+	      }
+	    }
+
+	    // When the user clicks on the button, scroll to the top of the document
+	    function topFunction() {
+	      document.body.scrollTop = 0;
+	      document.documentElement.scrollTop = 0;
+	    }
+    </script>
+
 </body>
 </html>

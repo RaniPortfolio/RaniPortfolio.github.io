@@ -1,7 +1,16 @@
-body{
+*{
 	margin: 0px
 	padding:0px;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #0d0d0d url('images/loading.gif') no-repeat center;
+  z-index: 999999;
 }
 
 h1{
@@ -362,6 +371,22 @@ p{
   text-align: center;
 }
 
+/****************************TOP BUTTON CSS**********************/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #a4233a;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
 /********************************CONTACT US SECTION CSS******************************/
 #contact{
 	padding: 5% 0;
