@@ -1,7 +1,6 @@
 body{
 	margin: 0px
 	padding:0px;
-	font-family: "Times New Roman", Times, serif;
 	box-sizing: border-box;
 }
 
@@ -13,17 +12,14 @@ h1{
 p{
 	font-size: 18px;
 }
-.header{
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/cake2.jpg) center top no-repeat fixed;
-	background-size: cover;
-    width: 100%;
-    height: 600px;
-}
+
 .navbar{
 	 width: 100%;
 	 color: #fff;
+	 position: absolute;
+	 background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+	 z-index: 1;
 }
-
 .navbar-nav li{
 	font-size:16px;
 	font-weight: bold;
@@ -38,22 +34,426 @@ p{
 }
 .navbar-nav li a:hover{
 	text-decoration: none;
-	color: #2c2c2c;
+	color: #a4233a;
 }
 
 .navbar-nav  li.active a{
-	color: #2c2c2c !important;
+	color: #a4233a !important;
 }
 .navbar-light .navbar-toggler{
 	background-color: #fff !important;
 }
 
+/********************************HOME SECTION CSS******************************/
+#home{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	display: flex;	
+}
+
+#home:before{
+ 	content: '';
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	background:#a4233a;
+ 	clip-path: circle(45% at 0% 50%);
+ 	z-index: -1;
+}
+#home .container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#home .container .home-image img{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+
+}
+#home .container .home-text{
+	width: 500px;
+	margin: 0 30px; 
+}
+#home .container .home-text .subtitle{
+	letter-spacing: 6px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #a4233a;
+}
+
+#home .container .home-text h1{
+	font-weight: 800;
+    letter-spacing: 5px;
+}
+#home .container .home-text span{
+	color: #595959;
+	letter-spacing: 3px;
+}
+#home .container .home-text p{
+	font-size: 16px;
+	padding-top: 20px;
+}
+#home .container .home-text .btn{
+	padding: 10px 10%;
+	border-radius: 35px;
+    background: #a4233a;
+    color: #fff;
+}
+@media only screen and (max-width: 768px) {
+ 	#home{
+ 		flex-direction: column;
+ 		text-align: center;
+ 		height: auto;
+    	padding-bottom: 20px;
+ 	}
+ 	#home .container{
+ 		flex-direction: column;
+ 	}
+ 	#home .container .home-image img{
+ 		padding-top: 25%;
+ 	}
+ 	#home .container .home-text{
+		width: 100%;
+	}
+	#home .container .home-text .subtitle{
+		color: #000;
+	}
+ }
+
+/********************************Feature SECTION***************************** */
+#feature{
+	padding: 3% 0;
+	background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.8)), url(images/contact-imag.jpg) center top no-repeat fixed;
+  	width: 100%;
+  	height: auto;
+  	background-size: 100% 100%;
+  	position: relative;
+}
+#feature:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #a4233a, #d7425d);
+    opacity: 0.5;
+}
+/********************************ABOUT US SECTION***************************** */
+#about{
+	padding: 5% 0;
+	width: 100%;
+}
+#about h1{
+	font-weight: 800;
+	color: #a4233a;
+}
+#about p{
+	padding-bottom: 20px;
+}
+#about .about-content i{
+	color:#a4233a;
+	padding: 20px;
+}
+/********************************OUR CATEGORY SECTION******************************/
+#category{
+	 background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.7)), url(images/cake2.jpg) center top no-repeat fixed;
+	 width: 100%;
+	 height: auto;
+	 text-align: center;
+	 position: relative;
+}
+
+#category h1{
+	font-weight: 800;
+	color: #fff;
+	padding-bottom: 20px;
+}
+
+
 /********************************PRODUCTS SECTION CSS******************************/
 #product{
 	padding: 5% 0px;
 }
-.pro-info h3{
+#product .card{
+ 	border: 0;
+ }
+#product .card .card-body{
+ 	background: #f7f7f7;
+ }
+#product .card .card-footer{
+ 	text-align: center;
+    background: #fff;
+    border: 1px solid #f7f7f7;
+ }
+#product .card .card-footer h5{
 	font-style: italic;
     font-weight: bold;
     padding-bottom: 10px;
+    color: #a4233a;
  }
+#product .card .card-footer p{
+	font-weight: 800;
+    color: #a4233a;
+}
+#product .card .card-footer i{
+	color: #a4233a;
+    font-size: 20px;
+}
+
+/********************************OUR DEAL SECTION CSS******************************/
+#our-deal{
+	padding: 5% 0;
+	background: #f7f7f7;
+}
+
+#our-deal h1{
+	font-weight: 800;
+	text-align: center;
+	padding-bottom: 20px;
+	color: #a4233a;
+}
+/*first section*/
+.img1, .img2, .img3{
+	width: 50%;
+	height: 100px;
+	border: 1px solid #d7425d;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+
+/*second section*/
+#our-deal .our-deal-section{
+	display: flex;
+	position: relative;
+	margin-left: 10px;
+}
+#our-deal .date-section{
+	background: #d7425d;
+    border-radius: 30px;
+    padding: 5% 0;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+#our-deal .date-section .date1{
+	border-bottom: 2px solid #fff;
+    padding-bottom: 20px;
+    margin-top: 15px;
+}
+#our-deal .our-deal-section .card {
+	border: 0;
+}
+#our-deal .our-deal-section .card .card-body{
+	padding: 10%;
+}
+#our-deal .our-deal-section .card .card-body h4{
+	font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+#our-deal .our-deal-section .card .card-body .price{
+	font-weight: 800;
+    font-size: 20px;
+    color: #ffc107;
+}
+#our-deal .our-deal-section .card .card-body del{
+	font-weight: 400;
+    font-size: 15px;
+}
+#our-deal .our-deal-section .card .card-body p{
+	font-size: 16px;
+    padding-top: 20px;
+}
+#our-deal .our-deal-section .card .card-body .fa-heart, .fa-thumbs-o-up{
+    border: 2px solid #d7425d;
+    padding: 8px 10px;
+    margin: 0 10px;
+    background-color: #d7425d;
+    color: #fff; 
+}
+#our-deal .our-deal-section .card .card-body .btn{
+	background-color: #d7425d;
+    color: #fff;
+    border: 0;
+}
+/********************************BLOG SECTION CSS******************************/
+#blog{
+	padding: 5% 0;
+}
+#blog h1{
+	font-weight: 800;
+	text-align: center;
+	padding-bottom: 20px;
+	color: #a4233a;
+}
+
+/*blogs*/ 
+#blog .blog-section1, .blog-section2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#blog .blog-imag1, .blog-imag2{
+	width: 30%;
+}
+#blog .blog-content1, .blog-content2{
+	padding: 15px;
+	width: 70%;
+}
+#blog .blog-content1 span, .blog-content2 span{
+	padding: 10px 0;
+    color: #a4233a;
+    letter-spacing: 2px;
+}
+#blog .blog-content1 h4, .blog-content2 h4{
+	padding-bottom: 10px;
+}
+#blog .blog-content1 p, .blog-content2 p{
+	font-size: 16px;
+}
+#blog .blog-content1 .btn, .blog-content2 .btn{
+	background: #fff;
+    color: #a4233a;
+    border: 0;
+    padding: 0;
+    font-weight: 500;
+}
+#blog .blog-icons i{
+    padding: 10px;
+    margin: 10px 5px;
+    background-color: #d7425d;
+    color: #fff;
+}
+
+
+ /*second section*/
+#blog .blog1{
+	position: relative;
+}
+
+#blog .blog1 .overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:1;
+  color: white;
+  text-align: center;
+}
+
+/********************************CONTACT US SECTION CSS******************************/
+#contact{
+	padding: 5% 0;
+	background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.6)), url(images/contact-imag.jpg) center top no-repeat;
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+#contact:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: 0px;
+    bottom: -20px;
+    background: #000;
+    background: url(images/contact-imag.jpg);
+    filter: blur(4px);
+}
+
+form{
+   padding: 10px 3%;
+   text-align: center;
+   width: 500px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   text-align: center;
+}
+form h1{
+	padding-bottom: 20px;
+	font-weight: 600;
+	color: #a4233a;
+} 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+form .btn{
+    padding: 10px 50px;
+    color: #fff;
+    border: 0;
+    border-radius: 25px;
+    background-color: #a4233a;  
+}
+form .btn:hover{
+  background-color: #a4233a;
+  color: #fff;
+  border: 0;
+}
+
+@media only screen and (max-width: 768px) {
+ 	form{
+	 	 width: 100%;
+ 		}
+ }
+
+/**********************FOOTER SECTION CSS****************************/
+ #footer{
+  padding-top: 5%;
+  background-color: #7e1b2d;
+  color: #fff;
+  position: relative;
+}
+
+#footer .waves{
+	position: absolute;
+	top:0;
+	left: 0;
+}
+#footer ul li{
+  padding: 5px;
+}
+#footer ul li a{
+  color: #fff;
+}
+#footer p{
+  padding: 5px;
+}
+
+#footer .foot-icon i{
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    margin: 0 10px;
+    background-color: #7e1b2d;
+}
+
+#footer .foot-icon{
+  padding: 10px;
+}
+#footer .foot{
+  background-color: #54121e;
+  padding: 10px;
+  text-align: center;
+}
+.foot p{
+  float: right;
+}
