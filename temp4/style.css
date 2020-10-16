@@ -141,7 +141,7 @@ p{
     right: 0;
     bottom: 0;
     background: linear-gradient(to right, #a4233a, #d7425d);
-    opacity: 0.5;
+    opacity: 0.4;
 }
 /********************************ABOUT US SECTION***************************** */
 #about{
@@ -166,6 +166,16 @@ p{
 	 height: auto;
 	 text-align: center;
 	 position: relative;
+}
+#category:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #a4233a, #d7425d);
+    opacity: 0.4;
 }
 
 #category h1{
@@ -334,7 +344,7 @@ p{
 }
 
 
- /*second section*/
+/*second section*/
 #blog .blog1{
 	position: relative;
 }
