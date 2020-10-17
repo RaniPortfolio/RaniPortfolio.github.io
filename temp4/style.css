@@ -203,6 +203,7 @@ p{
  }
 #product .card .card-body{
  	background: #f7f7f7;
+ 	background:linear-gradient(to top, #a4233a,#fff);
  }
 #product .card .card-footer{
  	text-align: center;
