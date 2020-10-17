@@ -406,29 +406,28 @@ p{
 	background: linear-gradient(rgba(2, 2, 2, 0.4), rgba(0, 0, 0, 0.5)), url(images/contact-imag.jpg) center top no-repeat;
 	width: 100%;
 	height: auto;
-	
+	position: relative;
 }
 
 form{
    padding: 10px 3%;
    text-align: center;
    width: 500px;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
    text-align: center;
    position: relative;
 }
-form:before {
+/*form:before {
     content: '';
     position: absolute;
-    top: -20px;
-    left: -20px;
-    right:  -20px;
-    bottom: -20px;
-    background: #000;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom:0px;
     background:linear-gradient(rgba(2, 2, 2, 0.4), rgba(0, 0, 0, 0.5)), url(images/contact-imag.jpg);
-    filter: blur(6px);
+    filter: blur(2px);
     z-index: -1;
-}
+}*/
 form h1{
 	padding-bottom: 20px;
 	font-weight: 600;
@@ -436,7 +435,7 @@ form h1{
 } 
 input[type=text], select, textarea {
   width: 100%;
-  padding: 12px;
+  padding: 7px 14px;
   border: 1px solid #fff;
   border-radius: 25px;
   box-sizing: border-box;
