@@ -168,15 +168,15 @@ p{
 	color:#a4233a;
 	padding: 20px;
 }
-/********************************OUR CATEGORY SECTION******************************/
-#category{
-	 background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.7)), url(images/cake2.jpg) center top no-repeat fixed;
+/********************************OUR MENU SECTION******************************/
+#our-menu{
+	 background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.8)), url(images/menu.png) center top no-repeat fixed;
 	 width: 100%;
 	 height: auto;
-	 text-align: center;
 	 position: relative;
+	 padding: 5% 0;
 }
-#category:before{
+#our-menu:before{
     content: '';
     position: absolute;
     top: 0;
@@ -184,15 +184,25 @@ p{
     right: 0;
     bottom: 0;
     background: linear-gradient(to right, #a4233a, #d7425d);
-    opacity: 0.4;
+    opacity: 0.2;
 }
 
-#category h1{
+#our-menu h1{
 	font-weight: 800;
-	color: #fff;
+	color: #f7f7f7;
 	padding-bottom: 20px;
+	text-align: center;
 }
-
+.our-menu-secction{
+	color: #fff;
+	margin-top: 30px;
+}
+.our-menu-secction h4{
+	font-weight: 800;    
+}
+.our-menu-secction p{
+	padding: 5px 40px;    
+}
 
 /********************************PRODUCTS SECTION CSS******************************/
 #product{
