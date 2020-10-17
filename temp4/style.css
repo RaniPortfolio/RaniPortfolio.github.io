@@ -170,7 +170,7 @@ p{
 }
 /********************************OUR MENU SECTION******************************/
 #our-menu{
-	 background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.8)), url(images/menu.png) center top no-repeat fixed;
+	 background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.8)), url(images/menu.jpg) center top no-repeat fixed;
 	 width: 100%;
 	 height: auto;
 	 position: relative;
@@ -189,7 +189,7 @@ p{
 
 #our-menu h1{
 	font-weight: 800;
-	color: #f7f7f7;
+	color: #fff;
 	padding-bottom: 20px;
 	text-align: center;
 }
