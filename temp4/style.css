@@ -168,6 +168,11 @@ p{
 	color:#a4233a;
 	padding: 20px;
 }
+@media only screen and (max-width: 768px) {
+ 	#about h1{
+		font-size: 2.5rem;
+	}
+ }
 /********************************OUR MENU SECTION******************************/
 #our-menu{
 	 background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.8)), url(images/menu.jpg) center top no-repeat fixed;
@@ -193,17 +198,21 @@ p{
 	padding-bottom: 20px;
 	text-align: center;
 }
-.our-menu-secction{
+#our-menu .our-menu-secction{
 	color: #fff;
 	margin-top: 30px;
 }
-.our-menu-secction h4{
+#our-menu .our-menu-secction h4{
 	font-weight: 800;    
 }
-.our-menu-secction p{
+#our-menu .our-menu-secction p{
 	padding: 5px 40px;    
 }
-
+@media only screen and (max-width: 768px) {
+ 	#our-menu .our-menu-secction h4{
+ 		font-size: 1.1rem;
+ 	}
+ }
 /********************************PRODUCTS SECTION CSS******************************/
 #product{
 	padding: 5% 0px;
@@ -249,11 +258,11 @@ p{
 }
 
 /*first section*/
-.our-deal-images-section{
+#our-deal .our-deal-images-section{
 	width: 30%
 }
 
-.img1, .img2, .img3{
+#our-deal .img1, .img2, .img3{
 	width: 100%;
 	height: 150px;
 }
@@ -268,18 +277,27 @@ p{
 #our-deal .date-section{
 	background: #d7425d;
     border-radius: 30px;
-    padding: 5% 0;
+    padding: 2rem 0;
     position: absolute;
     top: 50%;
     left: 0%;
     transform: translate(-50%,-50%);
     z-index: 1;
 }
-#our-deal .date-section .date1{
+#our-deal .date-section .date{
 	border-bottom: 2px solid #fff;
     padding-bottom: 20px;
     margin-top: 15px;
 }
+#our-deal .date-section .date h6{
+	font-size: 14px;
+    padding: 0 3px;
+}
+#our-deal .date-section .date span{
+	font-size: 13px;
+    padding: 0 3px;
+}
+
 #our-deal .our-deal-section .card {
 	border: 0;
 }
@@ -316,6 +334,11 @@ p{
     color: #fff;
     border: 0;
 }
+@media only screen and (max-width: 768px) {
+ 	#our-deal .our-deal-images-section{
+		width: 100%
+	}
+ }
 /********************************BLOG SECTION CSS******************************/
 #blog{
 	padding: 5% 0;
@@ -403,7 +426,7 @@ p{
 /********************************CONTACT US SECTION CSS******************************/
 #contact{
 	padding: 5% 0;
-	background: linear-gradient(rgba(2, 2, 2, 0.4), rgba(0, 0, 0, 0.5)), url(images/contact-imag.jpg) center top no-repeat;
+	background: linear-gradient(rgba(2, 2, 2, 0.4), rgba(0, 0, 0, 0.5)), url(images/contact_imag.jpg) center top no-repeat;
 	width: 100%;
 	height: auto;
 	position: relative;
