@@ -14,8 +14,9 @@
 }
 
 h1{
-	font-family: 'Roboto', sans-serif; 
+	font-family: 'Ewert', cursive;
 	font-size: 3em;
+	font-style: italic;
 }
 
 p{
@@ -97,6 +98,9 @@ p{
 #home .container .home-text h1{
 	font-weight: 800;
     letter-spacing: 5px;
+    background: linear-gradient(to right,#a4233a,#000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #home .container .home-text span{
 	color: #595959;
@@ -179,7 +183,7 @@ p{
 	 width: 100%;
 	 height: auto;
 	 position: relative;
-	 padding: 5% 0;
+	 padding:5% 0;
 }
 #our-menu:before{
     content: '';
@@ -191,7 +195,6 @@ p{
     background: linear-gradient(to right, #a4233a, #d7425d);
     opacity: 0.2;
 }
-
 #our-menu h1{
 	font-weight: 800;
 	color: #fff;
@@ -217,6 +220,13 @@ p{
 #product{
 	padding: 5% 0px;
 }
+#product h1{
+	font-weight: 800;
+	color: #a4233a;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
 #product .card{
  	border: 0;
  }
