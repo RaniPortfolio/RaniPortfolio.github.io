@@ -36,42 +36,35 @@ header ul li.active a{
 
 /*********************HOME SECTION CSS***************************/
 #home{
-	background:linear-gradient(rgba(2, 2, 2, 0.2), rgba(0, 0, 0, 0.3)), url(img/photo-2.jpg) center top no-repeat fixed;
+	background:linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.6)), url(img/photo-2.jpg) center top no-repeat fixed;
 	background-size: cover;
     position: relative;
     width: 100%;
     height: 100vh;
     color: #f7f7f7;
 }
-#home:before{
-	content: "";
-	position: absolute;
-	top: 0%;
-	bottom: 0%;
-	left: 0%;
-	right: 0%;
-	opacity: .2;
-	background-image: linear-gradient(to bottom right, #0796f2,#20a5f8);	
-}
 
 #home .text{
 	position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%,-50%);
-    width: 70%;
-    text-align: center;
+    width: 50%;
 }
-#home h1{
+#home .text h1{
 	font-size: 3em;
 	padding-bottom: 15px;
 }
-#home .btn{
+#home .text p{
+	font-size: 18px;
+}
+#home .text .btn{
     padding: 10px 50px;
     font-size: 1.2em;
     border: 1px solid #0796f2;
     color:#fff;
-    background:#0796f2;
+    border-radius: 40px;
+    font-weight: 800;
 }
 
 
@@ -130,6 +123,7 @@ header ul li.active a{
 /*********************SERVICES SECTION CSS***************************/
 #services{
 	padding: 5% 0px;
+	background: #f8f8f8;
 }
 #services h1{
 	color: #0796f2;
@@ -143,7 +137,7 @@ header ul li.active a{
 
  #services .flex-container {
   display: flex;
-  background-color: #f8f8f8;
+  background-color: #fff;
   margin-top: 5%;
   margin:5% 10%;
 }
@@ -215,7 +209,6 @@ header ul li.active a{
 }
 
 #services .service-text, .service-text-2, .service-text-3, .service-text-4{
-	background-color: #f8f8f8;
 	width: 80%;
 	padding: 2%;
 }
@@ -290,6 +283,17 @@ header ul li.active a{
     color: #fff;
     padding: 5%;
 }
+#call-to-action:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	opacity: .2;
+	background-image: linear-gradient(to bottom right, #0796f2,#20a5f8);	
+}
+
 #call-to-action h2{
 	font-size: 2.5em;
 	font-weight: 700;
@@ -301,6 +305,9 @@ header ul li.active a{
 	color: #fff;
     padding: 10px 50px;
     font-size: 1.2em;
+    border: 1px solid #20a5f8;
+    background: transparent;
+    border-radius: 40px;
 }
 @media only screen and (max-width: 768px) {
   #call-to-action{
@@ -315,6 +322,8 @@ header ul li.active a{
 #team h1{
 	color:#0796f2;
 	font-size: 2.5em;
+	text-align: center;
+	padding-bottom: 20px;
 }
 
 #team .card{
@@ -388,6 +397,7 @@ header ul li.active a{
 #contact h1{
 	color: #0796f2;
 	font-size: 2.5em;
+	text-align: center;
 }
 
 #contact .cont-icon{
@@ -420,11 +430,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-  border: 1px solid #ffc451;
-  background-color: #fff;
-  color:#ffc451 
-}
+
 form{
 	 padding: 20px;
 	 text-align: center;
