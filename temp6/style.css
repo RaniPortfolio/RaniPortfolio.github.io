@@ -36,16 +36,17 @@ header ul li.active a{
 
 /*********************HOME SECTION CSS***************************/
 #home{
-	background:linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.6)), url(img/photo-2.jpg) center top no-repeat fixed;
-	background-size: cover;
     position: relative;
     width: 100%;
     height: 100vh;
     color: #f7f7f7;
 }
-
+.banner-img{
+    width: 100%;
+    filter: blur(5px);
+}
 #home .text{
-	position: absolute;
+    position: absolute;
     top: 50%;
     left: 40%;
     transform: translate(-50%,-50%);
