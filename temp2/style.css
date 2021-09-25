@@ -55,7 +55,7 @@ nav.navbar {
 
 /*ABOU SECTION */
 
-.pie-chart{
+/* .pie-chart{
 	background: radial-gradient(circle closest-side, transparent 100%, #fff 0),
 	conic-gradient(
 		from 180deg,
@@ -72,7 +72,7 @@ nav.navbar {
 	min-width: 300px;
 	min-height: 300px;
 }
-
+ */
 .about-text i {
     font-size: 24px;
     color:  #990033;
