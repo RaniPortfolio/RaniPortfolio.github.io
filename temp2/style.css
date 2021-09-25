@@ -38,7 +38,7 @@ nav.navbar {
 #banner .banner-info h1{
 	font-weight: bold;
 	margin-bottom: 0px;
-	font-size: 50px;
+	font-size: 3.5em;
 	padding-bottom: 0;
 	
 }
@@ -247,6 +247,11 @@ footer .social-icons i {
 }
 
 @media only screen and (max-width: 360px) {
+	#banner{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	#banner .banner-info{
 		    width: 100%;
 	}
