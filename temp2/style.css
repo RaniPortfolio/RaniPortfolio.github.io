@@ -54,25 +54,6 @@ nav.navbar {
 }
 
 /*ABOU SECTION */
-
-/* .pie-chart{
-	background: radial-gradient(circle closest-side, transparent 100%, #fff 0),
-	conic-gradient(
-		from 180deg,
-		#ee5253 0,
-		#ee5253 35%,
-		#ff9f43 0,
-		#ff9f43 60%,
-		#f368e0 0,
-		#f368e0 75%,
-		#0abde3 0,
-		#0abde3 89%,
-		#10ac84 0,
-		#10ac84 100%);
-	min-width: 300px;
-	min-height: 300px;
-}
- */
 .about-text i {
     font-size: 24px;
     color:  #990033;
