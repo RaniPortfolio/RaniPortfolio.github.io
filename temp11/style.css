@@ -1,0 +1,352 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat';
+}
+
+header{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+}
+
+/*home-section css*/
+#home-section{
+	width: 100%;
+	height: 550px;
+  	background: url(img/image2.jpg);	
+  	background-attachment: fixed;
+  	background-position: 50% 100%;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+}
+.baner-info{
+	position: absolute;
+	top: 40%;
+	left: 40%;
+}
+.baner-info h1{
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+	color: #70767b;
+	margin-bottom: 20px;
+}
+
+.baner-info p{
+	font-size: 18px;
+	font-weight: 500;
+	color: #616a6f;
+	width: 70%;
+}
+
+
+ /*about us css*/
+#about{
+	width: 100%;
+	height: auto;
+	padding-top: 50px;
+}
+.about-info h1{
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+	color: #70829c;
+	position: relative;
+}
+.about-info h1:before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #70829c;
+    position: absolute;
+    top: 0;
+}
+.about-info h2{
+	color: #70829c;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.about-info p{
+	font-size: 16px;
+	font-weight: 500;
+	color: #616a6f;
+}
+
+
+/*gallery section*/
+#gallery{
+	width: 100%;
+	height: auto;
+	padding-top: 50px;
+}
+
+.gallery1 h2, .gallery2 h2, .gallery3 h2, .gallery4 h2{
+	color: #70829c;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.gallery1-img, .gallery2-img, .gallery3-img, .gallery4-img{
+	width: 50%; 
+	height: 300px;
+	box-shadow: 0 8px 16px 0 rgba(212, 219, 225, 0.5), 0 12px 40px 0 rgba(212, 219, 225, 0.5);
+}
+.gallery1-info, .gallery2-info, .gallery3-info, .gallery4-info{
+	background: #fff;
+    margin-left: -50px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(212, 219, 225, 0.5), 0 6px 20px 0 rgba(212, 219, 225, 0.5);
+    position: relative;
+    border-radius:5px;
+}
+.gallery2-info, .gallery4-info{
+	margin-right: -50px;
+	margin-left: 0px;
+	z-index: 1;
+}
+
+.gallery1-info:before , .gallery2-info:before, .gallery3-info:before, .gallery4-info:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border-bottom:  3px solid #b1c0c5;
+    border-radius:5px;
+}
+
+/*team section*/
+#team{
+	width: 100%;
+	height: 400px;
+	padding-top: 50px;
+	background:linear-gradient(rgba(168, 184, 214, 0.8), rgba(168, 184, 214, 0.8)), url(img/image5.png) center top no-repeat fixed;
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.team1-img, .team2-img, .team3-img, .team4-img{
+	width: 100%; 
+	height: 250px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.team-info{
+	text-align: right;
+	margin-bottom: 50px;
+}
+.team-info h1{
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+	color: #fff;
+	position: relative;
+}
+.team-info h1:before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.team-info h2{
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.team-info p{
+	font-size: 16px;
+	font-weight: 500;
+	color: #fff;
+}
+#team .card .card-body div{
+	position: relative;
+}
+#team .card .card-body .title{
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: #b6c3dd;
+    font-weight: 600;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 16px 0 rgba(212, 219, 225, 0.5), 0 12px 40px 0 rgba(212, 219, 225, 0.5);
+}
+#team .card .card-footer h6{
+	color: #70829c;
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+#team .card .card-footer p{
+	font-size: 20px;
+	font-weight: 600;
+	color: #70767b;
+}
+#team .card .card-footer .rate i{
+	color:#b6c3dd; 
+}
+
+
+/*products section css*/
+#products{
+	width: 100%;
+	height: auto;
+	padding-top: 20%;
+}
+
+.product-info h1{
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+	color: #70829c;
+	position: relative;
+}
+.product-info h1:before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #70829c;
+    position: absolute;
+    top: 0;
+}
+.product-info h2{
+	color: #70829c;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.product-info p{
+	font-size: 16px;
+	font-weight: 500;
+	color: #616a6f;
+}
+.product-feature i{
+	font-size: 20px;
+    color: #505e72;
+    background: #f2f2f2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 15px;
+}
+.product-feature p{
+	font-size: 16px;
+	font-weight: 500;
+	color: #616a6f;
+}
+footer{
+	padding: 10px;
+	background: #d4dbe1;
+}
+footer p{
+	font-size: 18px;
+	font-weight: 500;
+	color: #505e72;
+	margin-bottom: 0; 
+}
+footer .social-icons i {
+    padding: 10px;
+    text-align: center;
+    color: #505e72;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 360px) {
+  header{
+    position: relative;
+  }
+
+ .baner-info{
+  	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: right;
+  }
+  .baner-info p{
+  	width: 100%;
+  }
+  	
+}
+
+
+@media only screen and (max-width: 768px) {
+	#home-section{
+ 	 	background-position: 30% 100%;
+  }
+  .baner-info{
+	transform: translate(-50%,-50%);
+	width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: right;
+  }
+  .baner-info p{
+  	width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+	#home-section{
+ 	 	background-position: 30% 100%;
+  }
+  .baner-info{
+  	left: 50%;
+  }
+}
+/*footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   background:#0d0d0d;
+   color:#fff;
+   text-align: center;
+}
+.foot-text{
+	width: 50%;
+}
+.foot-menu ul li{
+	list-style: none;
+	text-align: center;
+	padding: .5rem;
+}
+.foot-menu ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+}
+footer .social-icons i {
+    padding: 16px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: .2rem;
+    background-color: #fff ;
+    color: #990033;
+    font-size: 20px;
+}*/
+
+@media only screen and (max-width: 360px) {
+	
+	footer{
+		display: flex;
+		flex-direction: column;
+	}
+	.foot-text{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+}
