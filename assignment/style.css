@@ -1,0 +1,803 @@
+*{
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: Poppins;
+}
+.width{
+	/*width: 1282px;*/
+	width: 1140px;
+	height: auto;
+}
+
+
+/*subheader section css*/
+.subHead{
+	background: #472E8D;
+	height: 25px;
+	width: 100%;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.subHead .subHeadText{
+	font-size: 18px;
+	font-family: Poppins;
+	letter-spacing: 0.9px;
+	color: #F4C911;
+	text-transform: uppercase;
+	font-weight: 500;
+	line-height: 64px;
+}
+
+
+/*social header section section css*/
+.socialHead{
+	 padding: 25px 0;
+	 display: flex;
+	 justify-content: space-around;
+	 align-items: center;
+}
+
+.callSect{
+	display: flex;
+	align-items: center;
+}
+.callSect i{
+	color: #000000;
+	font-weight: 600;
+	font-size: 40px;
+	padding: 10px
+}
+.callSect p{
+	font-size: 20px;
+	font-weight: 500;
+	color: #000000;
+	letter-spacing: 0px;
+}
+
+.shopingSect{
+	display: flex;	
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search i{
+	font-size: 24px;
+	color: #000000;
+	padding: 0 15px;
+}
+.search p{
+	font-size: 18px;
+	font-weight: 400;
+	color: #000000;
+}
+.cartIcon i{
+	font-size: 24px;
+	color: #000000;
+	padding: 0 40px;
+}
+.headProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headProfile i{
+	font-size: 24px;
+	color: #000000;
+	padding: 0 15px;
+}
+.headProfile p{
+	font-size: 18px;
+	font-weight: 400;
+	color: #000000;
+}
+
+/*header Menu section css*/
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu ul li a {
+  text-align: left;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 64px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.checkbtn{
+	font-size: 30px;
+	color: #000;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	display: none;
+}
+#check{
+	display: none;
+}
+
+
+/*banner section CSS*/
+#banner{
+	background: url(img/photo2.jpg);
+  	width: 100%;
+  	height: 100vh;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bannerInfo {
+    padding: 50px;
+}
+.bannersubInfo{
+	display: flex;
+}
+.bannersubInfo p{
+	font-size: 30px;
+	color: #FFFFFF;
+	text-shadow: 0px 3px 10px #00000066;
+	line-height: 40px;
+	position: relative;
+	margin-right:30px;
+}
+.bannersubInfo .scondtext:before, .thirdtext:before{
+    background: #fff;
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: -10px;
+    top: 20px;
+    border-radius: 50%;
+}
+.bannerInfo h1{
+	color: #FFFFFF;
+	text-shadow: 0px 3px 10px #0000007A;
+	text-transform: uppercase;
+	font-family: Futura PT;
+	font-weight: bold;
+	font-size: 50px;
+	margin-bottom: 13px;
+	line-height: 60px;
+
+}
+.learnBtn {
+    background: #F4C911;
+    border: 3px solid #472E8D;
+    border-radius: 33px;
+    width: 187px;
+    height: 63px;
+    font-size: 16px;
+    font-family:Hero New;
+	letter-spacing: 0px;
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 40px 40px 40px 0px;
+}
+.shopBtn{
+	font-family:Hero New;
+	letter-spacing: 0px;
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: 600;
+	background: #FFFFFF;
+	border: 3px solid #472E8D;
+	border-radius: 33px;
+	width: 187px;
+    height: 63px;
+	font-size: 16px;
+	margin: 40px 40px 40px 0px;
+}
+
+/*Feature Section*/
+#feature{
+	width: 100%;
+	height: auto;
+	background: #472E8D;
+	height: 200px;
+	position: relative;
+}
+.featureSect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: #FFFFFF;
+	box-shadow: 0px 30px 70px #29292A12;
+	border-radius: 8px;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.featureOne, .featureTwo, .featureThree, .featureFour{
+	width: 226px;
+	height: auto;
+	padding: 20px;
+}
+.featureOne i, .featureTwo i, .featureThree i, .featureFour i{
+	font-size: 35px;
+	background: #F4C911;
+	padding: 10px;
+	border-radius: 100px;
+	margin-bottom: 23px;
+}
+.featureOne p, .featureTwo p, .featureThree p, .featureFour p{
+	font-size: 18px;
+	text-align: center;
+	color: #472E8D;
+	line-height: 24px;
+	font-weight: 500;
+}
+
+/*Team Section Css*/
+#team{
+	background: #F1F6FBF1;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+#team h1{
+	font-size: 60px;
+	line-height: 77px;
+	font-weight: bold;
+	font-family: Futura PT;
+	color: #472E8D;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 15%;
+	position: relative;
+	margin-bottom: 10%;
+}
+#team h1:before{ 
+	content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: #99cc00;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+}
+.teamSect{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	margin: auto;
+}
+.team1, .team2, .team3{
+	width: 33.33%;
+	background: #FFFFFF;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 10px 10px #ebebeb;
+}
+.team1 img, .team2 img, .team3 img{
+	width: 100%;
+	height: auto;
+	border-radius: 10px 10px 0px 0px;
+}
+.team1Info, .team2Info, .team3Info{
+	padding: 20px;
+	text-align: left;
+}
+.team1 h3, .team2 h3, .team3 h3{
+	font-size: 30px;
+	line-height: 46px;
+	color: #472E8D;
+	font-weight:600;
+}
+.team1 p, .team2 p, .team3 p{
+	font-size: 16px;
+	line-height: 28px;
+	color: #878787;
+	font-weight:300;
+	margin:15px 0;
+}
+.teamSect .readBtn{
+	background: #F4C911;
+	border-radius: 33px;
+	padding: 10px 30px;
+	border: 0;
+	font-size: 14px;
+	font-weight: 600;
+	color: #472E8D;
+	text-transform: uppercase;
+}
+.viewBtn{
+	background: #F4C911;
+	border-radius: 33px;
+	padding: 10px 30px;
+	border: 0;
+	font-size: 14px;
+	font-weight: 600;
+	color: #472E8D;
+	text-transform: uppercase;
+	margin: 50px 0;
+}
+
+/*about section css*/
+.aboutSect{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
+}
+.about-img{
+	width: 50%;
+}
+.about-info{
+	width: 50%;
+}
+.about-info h1{
+	font-size: 50px;
+	line-height: 64px;
+	color: #472E8D;
+	font-family: Futura PT;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	width: 579px;
+	height: auto;
+}
+.about-info p{
+	color: #002C8F;
+	font-size: 16px;
+	line-height: 38px;
+	font-weight: 500;
+	margin-bottom: 62px;
+
+}
+.about-info .readBtn{
+	background: #F4C911;
+	border-radius: 33px;
+	padding: 10px 30px;
+	border: 0;
+	font-size: 14px;
+	font-weight: 600;
+	color: #472E8D;
+	text-transform: uppercase;
+}
+
+/*Services Section css*/
+#services{
+	text-align: center;
+	padding: 20px;
+}
+.serviceSect{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.serviceMain, .serviceImg{
+	width: 50%;
+}
+#services h1{
+	font-size: 60px;
+	line-height: 77px;
+	font-weight: bold;
+	font-family: Futura PT;
+	color: #472E8D;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 5%;
+	position: relative;
+	margin-bottom: 5%;
+}
+#services h1:before{ 
+	content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: #99cc00;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+}
+.servSect1, .servSect2, .servSect3, .servSect4{
+	margin: 20px;
+}
+.serviceInfo{
+	margin-right:20px;
+}
+.serviceInfo div h5{
+	font-size: 30px;
+	line-height: 46px;
+	text-align: right;
+	font-weight: 500;
+	color: #F4C911;
+}
+.serviceInfo{
+	display: flex;
+	justify-content: end;
+}
+.serviceText{
+	margin-right: 60px;
+}
+.serviceInfo .serviceText p{
+	width: 195px;
+	text-align: right;
+	font-weight: 500;
+	letter-spacing: 0px;
+	color: #472E8D;
+}
+.serviceIcon i{
+	font-size: 72px;
+	width: 136px;
+	height: 136px;
+	background: transparent linear-gradient(180deg, #2AC4F4 0%, #1651AB 100%);
+	box-shadow: inset 0px 5px 13px #00000029;
+	text-align: center;
+	border-radius: 50%;
+	padding: 30px;
+	color: #FFFFFF;
+}
+#services .learnBtn{
+	background: #F4C911;
+	border-radius: 33px;
+	padding: 10px 30px;
+	border: 0;
+	font-size: 14px;
+	font-weight: 600;
+	color: #472E8D;
+	text-transform: uppercase;
+	margin: 50px;
+}
+
+/*callAction section css*/
+#callAction{
+	background: url(img/photo5.jpg) center top no-repeat fixed;
+	background-size: cover;
+    width: 100%;
+    height: 511px;
+    display: flex;
+    align-items: center;
+}
+.callAction-Info{
+   	margin: auto;
+   	padding: 20px;
+}
+.callAction-Info h1{
+	font-size: 60px;
+	font-family: Futura PT;
+	font-weight: bold;
+	line-height: 77px;
+	color: #FFFFFF;
+	text-shadow: 0px 3px 6px #00000029;
+	text-transform: uppercase;
+	margin-bottom: 56px;
+	width: 745px;
+	height: auto;
+}
+
+.callAction-Info .e-mail {
+    padding: 10px 40px;
+    border-radius: 33px;
+    background: #FFFFFF;
+    border: 3px solid #472E8D;
+    margin-right: 20px;
+}
+.callAction-Info button.subscribe {
+    background: #F4C911;
+    border-radius: 33px;
+    padding: 10px 30px;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #010004;
+    text-transform: uppercase;
+    margin: 50px 0;
+    border: 3px solid #472E8D;
+}
+
+/*Testinomial Section css*/
+#testinomial{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 120px 0;
+}
+.testSect{
+    display: flex;
+    margin: auto;
+}
+.testinomialImg, .testinomialInfo{
+    width: 50%;
+}
+.testinomialImg img{
+	border-radius: 10px 0px 0px 10px;
+	width: 100%;
+	height: 600px;
+}
+
+.testinomialInfo{
+	background: #472E8D;
+	padding: 50px;
+	border-radius: 0px 10px 10px 0;
+	height: 600px;
+}
+.testinomialInfo .testinomialIcons i{
+	font-size: 30px;
+	line-height: 39px;
+	color: #F8A420;
+	margin-bottom: 40px;
+}
+.testinomialText p{
+	text-align: center;
+	font-size: 18px;
+	line-height: 34px;
+	font-weight: 300;
+	font-style: italic;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	margin-bottom: 30px;
+}	
+.testinomialText h5{
+	font-size: 24px;
+	font-weight: 500;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+}
+
+/*Footer section css*/
+footer{
+	background: #452C8A;
+}
+.footmain{
+	background: #452C8A;
+	margin: auto;
+}
+.footSect{
+	display: flex;
+	padding: 50px 0;
+}
+.footSect-Two ul, .footSect-Three ul{
+	margin-top: 20px;
+}
+.footSect-Two ul li{
+	list-style: none;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 28px;
+}
+.footSect-Three ul li{
+	list-style: none;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 28px;
+}
+.footSect-One{
+	width: 40%;
+	height: auto;
+	padding: 0 20px;
+	margin-bottom: 20px;
+}
+.footSect-Two, .footSect-Three, .footSect-Four{
+	padding: 0 20px;
+	margin-bottom: 20px;
+}
+.address, .phone, .email{
+	display: flex;
+	margin-top: 20px;
+}
+.footSect-One p{
+	font-size: 16px;
+	text-align: left;
+	line-height: 36px;
+	color: #FFFFFF;
+	font-weight: 300;
+	margin-top: 20px;
+}
+.footSect-One h5, .footSect-Two h5, .footSect-Three h5, .footSect-Four h5{
+	font-size: 30px;
+	font-family: Futura PT;
+	font-weight: bold;
+	line-height: 38px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	width: 100%;
+    height: 80px;
+    position: relative;
+}
+.footSect-Two h5:before, .footSect-Three h5:before, .footSect-Four h5:before{ 
+	content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: #99cc00;
+    left: 0;
+    bottom: 0;
+    border-radius: 50px;
+}
+.address i, .phone i, .email i {
+    font-size: 18px;
+    color: #FFFFFFCC;
+    margin-right: 10px;
+    line-height: 28px;
+}
+.address p, .phone p, .email p {
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 28px;
+    font-weight: 300;
+}
+.social i {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    padding: 10px;
+    color: #fff;
+    margin: 10px;
+}
+.subFoot{
+	background: #000000;
+}
+.footCopy {
+    background: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    margin: auto;
+}
+.footCopy p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    font-weight: 300;
+}
+.footCopy p span {
+    color: #F4C911;
+    font-weight: 500;
+}
+@media only screen and (max-width: 576px) {
+ 	.socialHead{
+	 	display: none;
+	}
+	.callSect, .logo, .shopingSect{
+		margin-bottom: 20px;
+	}
+	.menu ul{
+		display: flex;
+	 	flex-direction: column;
+	}
+	label.checkbtn {
+	    display: block;
+	}
+	.menu ul {
+	    position: fixed;
+	    width: 100%;
+	    height: 100vh;
+	    background: #472E8D;
+	    text-align: center;
+	    transition: all .5s;
+	    top: 100px;
+    	left: -100%;
+	}
+	input#check:checked ~ ul {
+	    left: 0;
+	    z-index: 1;
+	}
+
+	/*banner Mobile section*/
+	.bannerInfo h1{
+ 		font-size: 30px;
+ 		line-height: 40px;
+ 	}
+
+ 	/*feature Mobile section*/
+ 	.featureSect{
+ 		display: flex;
+ 		flex-direction: column;
+ 		top: 400px;
+ 	}
+
+ 	/*Team Mobile section*/
+ 	.team1, .team2, .team3, .team4{
+		width: 100%;
+	}
+	.teamSect{
+		display: flex;
+		flex-direction: column;
+	}
+	#team h1{
+		padding-top: 156%;
+	}
+
+	/*About Mobile section*/
+	.about-info{
+		width: 100%;
+	}
+	.about-img{
+		width: 100%;
+	}
+	.aboutSect{
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	/*Service Mobile section*/
+	.servSect1, .servSect2, .servSect3, .servSect4 {
+	     margin: 10px 0;
+	     padding: 20px; 
+	}
+	.serviceText {
+	    margin-right: 10px;
+	}
+	.serviceMain, .serviceImg{
+		width: 100%;
+	}
+	.serviceInfo{
+		justify-content: center;
+	}
+	/*Testinomial Mobile section*/
+	#testinomial{
+		padding: 0px;
+		margin: 10px 0;
+	}
+	.testinomialImg, .testinomialInfo {
+	    width: 100%;
+	}
+	.testSect{
+		display: flex;
+		flex-direction: column;
+	}
+	.testinomialInfo{
+		height: auto;
+	}
+	.footSect{
+		display: flex;
+		flex-direction: column;
+	}
+	.footSect-One{
+		width: 100%;
+	}
+}
+
+ @media only screen and (max-width: 1200px){
+ 	.width{
+ 		width: 100%;
+ 	}
+
+ 	/*feature Mobile section*/
+ 	.featureSect{
+ 		width: 90%;
+    	height: auto;
+ 	}
+ 	.about-info h1{
+		font-size: 30px;
+		line-height: 40px;
+		width: 100%;
+	}
+	.callAction-Info h1{
+		width: 100%;
+		font-size: 30px;
+		line-height: 60px;
+	}
+ }
